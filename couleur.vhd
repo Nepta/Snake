@@ -1,0 +1,24 @@
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--use IEEE.numeric_std.ALL;
+--
+----type colorBus is array (integer range <>) of std_logic_vector;
+--
+--entity couleur is
+--	port(
+--		cmpt_pixel, cmpt_ligne, offset: in std_logic_vector(9 downto 0);
+--		red, green, blue: in std_logic
+--	);
+--end entity;
+--
+--
+--architecture Behavioral of couleur is
+--	signal intersection: std_logic;
+--begin
+--		intersection <= 
+--
+--		interieur <= (carre1 or carre2 or carre3 or carre4) xor carre0;
+--		green <= (others =>'1') when  interieur = '1' else (others =>'0');
+--		red <= (others =>'1') when  interieur = '1' and (unsigned(offset) > 300) else (others =>'0');
+--		blue <= (others =>'1');
+--end Behavioral;

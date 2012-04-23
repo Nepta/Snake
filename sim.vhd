@@ -1,0 +1,25 @@
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--use IEEE.numeric_std.ALL;
+--entity simu is
+--end entity;
+--
+--architecture sim1 of simu is
+--signal clk, raza: std_logic := '1';
+--signal red, green, blue: std_logic_vector(9 downto 0) := (others => '0');
+--signal hsync, vsync, blank: std_logic :='0';
+--signal clk_vga: std_logic :='0';
+--signal sync: std_logic :='0';
+--begin
+--u1: entity work.vga(controle) port map (clk => clk, raza => raza, 
+-- red => red, green => green, blue=>blue,
+-- hsync=>hsync, vsync=>vsync, blank=> blank,
+-- clk_vga => clk_vga,
+-- sync => sync);
+--
+--
+--clk <= not clk after 50 ns;
+--
+--raza <= '0' after 200 ns;
+--end;
+--
