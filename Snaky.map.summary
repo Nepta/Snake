@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Apr 23 16:27:31 2012
+Analysis & Synthesis Status : Successful - Mon Apr 23 19:47:48 2012
 Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : Snaky
 Top-level Entity Name : vga
 Family : Cyclone II
-Total logic elements : 148
-    Total combinational functions : 140
-    Dedicated logic registers : 58
-Total registers : 58
-Total pins : 41
+Total logic elements : 149
+    Total combinational functions : 141
+    Dedicated logic registers : 59
+Total registers : 59
+Total pins : 45
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

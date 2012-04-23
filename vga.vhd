@@ -8,6 +8,7 @@ entity vga is
 		red, green, blue: out std_logic_vector(9 downto 0);
 
 		fourKey: in std_logic_vector(3 downto 0);
+		fourLed: out std_logic_vector(3 downto 0);
 		
 		hsync, vsync, blank: out std_logic;
 		clk_vga: out std_logic;
@@ -207,6 +208,8 @@ begin
 
 	x <= '1' when bodyWave(1) = '1' else '0';
 	y <= '1' when bodyWave(3) = '1' else '0';
+	
+	fourLed <= bodyWave;
 	
 	red <= (others => '0') when carre0 = '1' else (others => '1');
 	green <= (others => '1');

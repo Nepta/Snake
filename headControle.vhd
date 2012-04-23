@@ -36,7 +36,7 @@ end process;
 synchronisation:
 process (clk,raza)
 begin
-	if raza = '1' then present <= pRight;
+	if raza = '0' then present <= pRight;
 	elsif rising_edge(clk) then present <= futur;
 	end if;
 end process;

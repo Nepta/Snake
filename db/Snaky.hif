@@ -22,36 +22,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-vga
-# storage
-db|Snaky.(0).cnf
-db|Snaky.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-vga.vhd
-3c6a9cf3d9c15faaaafa133108ba23d
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 carre
 # storage
 db|Snaky.(1).cnf
@@ -330,7 +300,7 @@ ON
 # case_insensitive
 # source_file
 button.vhd
-418448e6be6a2884c5886c1770d1ec57
+fdec108adae08c7e7b30479f241d9172
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -352,6 +322,36 @@ button:buttonRigth
 
 # end
 # entity
+vga
+# storage
+db|Snaky.(0).cnf
+db|Snaky.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+vga.vhd
+86304a4b6b31bd2f6286b26c4d89168
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
 headControle
 # storage
 db|Snaky.(8).cnf
@@ -365,7 +365,7 @@ ON
 # case_insensitive
 # source_file
 headControle.vhd
-45976f2115b344108a2cff3dd60b5e7
+ac928ebc89bccb6e80a63a93dcec4db2
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT

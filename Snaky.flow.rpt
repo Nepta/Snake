@@ -1,5 +1,5 @@
 Flow report for Snaky
-Mon Apr 23 16:27:43 2012
+Mon Apr 23 19:48:13 2012
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -38,18 +38,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 23 16:27:43 2012         ;
+; Flow Status                        ; Successful - Mon Apr 23 19:48:13 2012         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Snaky                                         ;
 ; Top-level Entity Name              ; vga                                           ;
 ; Family                             ; Cyclone II                                    ;
 ; Device                             ; EP2C35F672C6                                  ;
 ; Timing Models                      ; Final                                         ;
-; Total logic elements               ; 145 / 33,216 ( < 1 % )                        ;
-;     Total combinational functions  ; 144 / 33,216 ( < 1 % )                        ;
-;     Dedicated logic registers      ; 58 / 33,216 ( < 1 % )                         ;
-; Total registers                    ; 58                                            ;
-; Total pins                         ; 41 / 475 ( 9 % )                              ;
+; Total logic elements               ; 148 / 33,216 ( < 1 % )                        ;
+;     Total combinational functions  ; 145 / 33,216 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 59 / 33,216 ( < 1 % )                         ;
+; Total registers                    ; 59                                            ;
+; Total pins                         ; 45 / 475 ( 9 % )                              ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/23/2012 16:27:28 ;
+; Start date & time ; 04/23/2012 19:47:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Snaky               ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 155178703942.133519124703205 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 155178703942.133520326403733 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                     ; --            ; vga         ; Top        ;
@@ -88,10 +88,10 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; --                  ; 00:00:03                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; --                  ; 00:00:07                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; --                  ; 00:00:03                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; --                  ; 00:00:03                           ;
+; Fitter               ; 00:00:20     ; 1.0                     ; --                  ; 00:00:07                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; --                  ; 00:00:03                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

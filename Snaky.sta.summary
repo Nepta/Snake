@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clk'
+Slack : -2.769
+TNS   : -91.469
+
+Type  : Slow Model Hold 'clk'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'fourKey[1]'
+Slack : -1.269
+TNS   : -1.269
+
+Type  : Slow Model Recovery 'fourKey[2]'
+Slack : -1.173
+TNS   : -1.173
+
+Type  : Slow Model Recovery 'fourKey[3]'
+Slack : -0.912
+TNS   : -0.912
+
+Type  : Slow Model Recovery 'fourKey[0]'
+Slack : -0.376
+TNS   : -0.376
+
+Type  : Slow Model Removal 'fourKey[0]'
+Slack : 1.146
+TNS   : 0.000
+
+Type  : Slow Model Removal 'fourKey[3]'
+Slack : 1.682
+TNS   : 0.000
+
+Type  : Slow Model Removal 'fourKey[2]'
+Slack : 1.943
+TNS   : 0.000
+
+Type  : Slow Model Removal 'fourKey[1]'
+Slack : 2.039
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -56.380
+
+Type  : Slow Model Minimum Pulse Width 'fourKey[0]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'fourKey[1]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'fourKey[2]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Slow Model Minimum Pulse Width 'fourKey[3]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Setup 'clk'
+Slack : -0.780
+TNS   : -16.164
+
+Type  : Fast Model Hold 'clk'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'fourKey[1]'
+Slack : -0.661
+TNS   : -0.661
+
+Type  : Fast Model Recovery 'fourKey[2]'
+Slack : -0.632
+TNS   : -0.632
+
+Type  : Fast Model Recovery 'fourKey[3]'
+Slack : -0.486
+TNS   : -0.486
+
+Type  : Fast Model Recovery 'fourKey[0]'
+Slack : -0.240
+TNS   : -0.240
+
+Type  : Fast Model Removal 'fourKey[0]'
+Slack : 1.120
+TNS   : 0.000
+
+Type  : Fast Model Removal 'fourKey[3]'
+Slack : 1.366
+TNS   : 0.000
+
+Type  : Fast Model Removal 'fourKey[2]'
+Slack : 1.512
+TNS   : 0.000
+
+Type  : Fast Model Removal 'fourKey[1]'
+Slack : 1.541
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -56.380
+
+Type  : Fast Model Minimum Pulse Width 'fourKey[0]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'fourKey[1]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'fourKey[2]'
+Slack : -1.222
+TNS   : -2.222
+
+Type  : Fast Model Minimum Pulse Width 'fourKey[3]'
+Slack : -1.222
+TNS   : -2.222
+
+------------------------------------------------------------

@@ -103,4 +103,10 @@ set_location_assignment PIN_G26 -to fourKey[3]
 set_location_assignment PIN_N23 -to fourKey[2]
 set_location_assignment PIN_P23 -to fourKey[1]
 set_location_assignment PIN_W26 -to fourKey[0]
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_location_assignment PIN_V18 -to fourLed[3]
+set_location_assignment PIN_W19 -to fourLed[2]
+set_location_assignment PIN_AF22 -to fourLed[1]
+set_location_assignment PIN_AE22 -to fourLed[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,0 +1,1567 @@
+TimeQuest Timing Analyzer report for Snaky
+Mon Apr 23 19:44:48 2012
+Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Recovery: 'fourKey[1]'
+ 14. Slow Model Recovery: 'fourKey[2]'
+ 15. Slow Model Recovery: 'fourKey[3]'
+ 16. Slow Model Recovery: 'fourKey[0]'
+ 17. Slow Model Removal: 'fourKey[0]'
+ 18. Slow Model Removal: 'fourKey[3]'
+ 19. Slow Model Removal: 'fourKey[2]'
+ 20. Slow Model Removal: 'fourKey[1]'
+ 21. Slow Model Minimum Pulse Width: 'clk'
+ 22. Slow Model Minimum Pulse Width: 'fourKey[0]'
+ 23. Slow Model Minimum Pulse Width: 'fourKey[1]'
+ 24. Slow Model Minimum Pulse Width: 'fourKey[2]'
+ 25. Slow Model Minimum Pulse Width: 'fourKey[3]'
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Fast Model Setup Summary
+ 29. Fast Model Hold Summary
+ 30. Fast Model Recovery Summary
+ 31. Fast Model Removal Summary
+ 32. Fast Model Minimum Pulse Width Summary
+ 33. Fast Model Setup: 'clk'
+ 34. Fast Model Hold: 'clk'
+ 35. Fast Model Recovery: 'fourKey[1]'
+ 36. Fast Model Recovery: 'fourKey[2]'
+ 37. Fast Model Recovery: 'fourKey[3]'
+ 38. Fast Model Recovery: 'fourKey[0]'
+ 39. Fast Model Removal: 'fourKey[0]'
+ 40. Fast Model Removal: 'fourKey[3]'
+ 41. Fast Model Removal: 'fourKey[2]'
+ 42. Fast Model Removal: 'fourKey[1]'
+ 43. Fast Model Minimum Pulse Width: 'clk'
+ 44. Fast Model Minimum Pulse Width: 'fourKey[0]'
+ 45. Fast Model Minimum Pulse Width: 'fourKey[1]'
+ 46. Fast Model Minimum Pulse Width: 'fourKey[2]'
+ 47. Fast Model Minimum Pulse Width: 'fourKey[3]'
+ 48. Clock to Output Times
+ 49. Minimum Clock to Output Times
+ 50. Multicorner Timing Analysis Summary
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Setup Transfers
+ 54. Hold Transfers
+ 55. Recovery Transfers
+ 56. Removal Transfers
+ 57. Report TCCS
+ 58. Report RSKM
+ 59. Unconstrained Paths
+ 60. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                    ;
++--------------------+-----------------------------------------------------------------+
+; Quartus II Version ; Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition ;
+; Revision Name      ; Snaky                                                           ;
+; Device Family      ; Cyclone II                                                      ;
+; Device Name        ; EP2C35F672C6                                                    ;
+; Timing Models      ; Final                                                           ;
+; Delay Model        ; Combined                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                     ;
++--------------------+-----------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                 ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets        ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }        ;
+; fourKey[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fourKey[0] } ;
+; fourKey[1] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fourKey[1] } ;
+; fourKey[2] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fourKey[2] } ;
+; fourKey[3] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fourKey[3] } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 265.32 MHz ; 265.32 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.769 ; -91.469       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------------+
+; Slow Model Recovery Summary         ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; fourKey[1] ; -1.269 ; -1.269        ;
+; fourKey[2] ; -1.173 ; -1.173        ;
+; fourKey[3] ; -0.912 ; -0.912        ;
+; fourKey[0] ; -0.376 ; -0.376        ;
++------------+--------+---------------+
+
+
++------------------------------------+
+; Slow Model Removal Summary         ;
++------------+-------+---------------+
+; Clock      ; Slack ; End Point TNS ;
++------------+-------+---------------+
+; fourKey[0] ; 1.146 ; 0.000         ;
+; fourKey[3] ; 1.682 ; 0.000         ;
+; fourKey[2] ; 1.943 ; 0.000         ;
+; fourKey[1] ; 2.039 ; 0.000         ;
++------------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++------------+--------+------------------+
+; Clock      ; Slack  ; End Point TNS    ;
++------------+--------+------------------+
+; clk        ; -1.380 ; -56.380          ;
+; fourKey[0] ; -1.222 ; -2.222           ;
+; fourKey[1] ; -1.222 ; -2.222           ;
+; fourKey[2] ; -1.222 ; -2.222           ;
+; fourKey[3] ; -1.222 ; -2.222           ;
++------------+--------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                                                                ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.769 ; div2                               ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.006      ; 3.811      ;
+; -2.712 ; div2                               ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.006      ; 3.754      ;
+; -2.614 ; div2                               ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.006      ; 3.656      ;
+; -2.510 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.548      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.507 ; div2                               ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.541      ;
+; -2.490 ; div2                               ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 3.525      ;
+; -2.490 ; div2                               ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 3.525      ;
+; -2.490 ; div2                               ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 3.525      ;
+; -2.453 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.491      ;
+; -2.424 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.460      ;
+; -2.424 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.460      ;
+; -2.410 ; div2                               ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.006      ; 3.452      ;
+; -2.402 ; div2                               ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.006      ; 3.444      ;
+; -2.360 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.396      ;
+; -2.360 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.396      ;
+; -2.355 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.393      ;
+; -2.336 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.372      ;
+; -2.336 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.372      ;
+; -2.327 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.363      ;
+; -2.327 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.363      ;
+; -2.238 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.274      ;
+; -2.238 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.274      ;
+; -2.206 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.244      ;
+; -2.155 ; clock_divider:exertier|counter[5]  ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.193      ;
+; -2.155 ; clock_divider:exertier|counter[5]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.193      ;
+; -2.151 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.189      ;
+; -2.149 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.187      ;
+; -2.146 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.182      ;
+; -2.146 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.182      ;
+; -2.146 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.182      ;
+; -2.145 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.181      ;
+; -2.143 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.181      ;
+; -2.101 ; clock_divider:exertier|counter[19] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.137      ;
+; -2.101 ; clock_divider:exertier|counter[19] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.137      ;
+; -2.101 ; clock_divider:exertier|counter[14] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.137      ;
+; -2.101 ; clock_divider:exertier|counter[14] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.137      ;
+; -2.096 ; clock_divider:exertier|counter[3]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.134      ;
+; -2.095 ; clock_divider:exertier|counter[11] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.131      ;
+; -2.095 ; clock_divider:exertier|counter[11] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.131      ;
+; -2.082 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.118      ;
+; -2.082 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.118      ;
+; -2.082 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.118      ;
+; -2.081 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.117      ;
+; -2.065 ; clock_divider:exertier|counter[4]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.103      ;
+; -2.058 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.094      ;
+; -2.058 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.094      ;
+; -2.058 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.094      ;
+; -2.057 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.093      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.056 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 3.089      ;
+; -2.051 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.089      ;
+; -2.049 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 3.085      ;
+; -2.049 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.085      ;
+; -2.049 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.085      ;
+; -2.048 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.084      ;
+; -2.039 ; clock_divider:exertier|counter[3]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.077      ;
+; -2.039 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.073      ;
+; -2.039 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.073      ;
+; -2.039 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.073      ;
+; -2.008 ; clock_divider:exertier|counter[4]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 3.046      ;
+; -2.007 ; div2                               ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.006      ; 3.049      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.974 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 3.008      ;
+; -1.962 ; cptbe:C2|valint[4]                 ; cptbe:C2|valint[1]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.998      ;
+; -1.960 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 2.996      ;
+; -1.960 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.996      ;
+; -1.960 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.996      ;
+; -1.959 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.995      ;
+; -1.957 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 2.992      ;
+; -1.957 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 2.992      ;
+; -1.957 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 2.992      ;
+; -1.955 ; clock_divider:exertier|counter[5]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 2.993      ;
+; -1.941 ; div2                               ; clock_divider:exertier|counter[15] ; clk          ; clk         ; 1.000        ; 0.006      ; 2.983      ;
+; -1.941 ; clock_divider:exertier|counter[3]  ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.002      ; 2.979      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.937 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 2.971      ;
+; -1.925 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 2.958      ;
+; -1.925 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 2.958      ;
+; -1.925 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 2.958      ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                                                                      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; div2                                  ; div2                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; headControle:snakeHead|present.pRight ; headControle:snakeHead|present.pRight ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; headControle:snakeHead|present.pLeft  ; headControle:snakeHead|present.pLeft  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; headControle:snakeHead|present.pDown  ; headControle:snakeHead|present.pDown  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; headControle:snakeHead|present.pUp    ; headControle:snakeHead|present.pUp    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.657      ;
+; 0.759 ; button:buttonLeft|buttonCliked        ; button:buttonLeft|resync              ; fourKey[2]   ; clk         ; -0.500       ; 0.405      ; 0.930      ;
+; 0.795 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.061      ;
+; 0.801 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.067      ;
+; 0.802 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.068      ;
+; 0.805 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
+; 0.808 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.074      ;
+; 0.809 ; clock_divider:exertier|counter[7]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.075      ;
+; 0.809 ; clock_divider:exertier|counter[8]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.075      ;
+; 0.812 ; cptbe:C2|valint[6]                    ; cptbe:C2|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.078      ;
+; 0.813 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.079      ;
+; 0.815 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.081      ;
+; 0.821 ; cptbe:C1|valint[8]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.087      ;
+; 0.826 ; cptbe:C1|valint[0]                    ; cptbe:C1|valint[0]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.092      ;
+; 0.828 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.094      ;
+; 0.832 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.098      ;
+; 0.836 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.102      ;
+; 0.837 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[2]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.103      ;
+; 0.838 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; clock_divider:exertier|counter[15]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; clock_divider:exertier|counter[13]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.104      ;
+; 0.844 ; cptbe:C1|valint[7]                    ; cptbe:C1|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.110      ;
+; 0.848 ; cptbe:C2|valint[7]                    ; cptbe:C2|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.114      ;
+; 0.849 ; cptbe:C1|valint[5]                    ; cptbe:C1|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.115      ;
+; 0.852 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[4]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.118      ;
+; 0.856 ; cptbe:C2|valint[2]                    ; cptbe:C2|valint[2]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.122      ;
+; 0.857 ; cptbe:C2|valint[5]                    ; cptbe:C2|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.123      ;
+; 0.872 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.138      ;
+; 0.873 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.139      ;
+; 0.888 ; button:buttonDown|buttonCliked        ; button:buttonDown|resync              ; fourKey[1]   ; clk         ; -0.500       ; 0.320      ; 0.974      ;
+; 0.931 ; clock_divider:exertier|counter[19]    ; clock_divider:exertier|counter[19]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.197      ;
+; 0.944 ; cptbe:C1|valint[9]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.210      ;
+; 0.979 ; clock_divider:exertier|counter[1]     ; clock_divider:exertier|counter[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.245      ;
+; 0.999 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.265      ;
+; 1.037 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.303      ;
+; 1.039 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.305      ;
+; 1.042 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 1.308      ;
+; 1.149 ; cptbe:C2|valint[0]                    ; cptbe:C2|valint[9]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 1.414      ;
+; 1.178 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.444      ;
+; 1.184 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.450      ;
+; 1.188 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.454      ;
+; 1.188 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.454      ;
+; 1.191 ; clock_divider:exertier|counter[14]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.457      ;
+; 1.192 ; clock_divider:exertier|counter[6]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.458      ;
+; 1.192 ; clock_divider:exertier|counter[7]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.458      ;
+; 1.203 ; cptbe:C1|valint[0]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.469      ;
+; 1.205 ; clock_divider:exertier|counter[16]    ; clock_divider:exertier|counter[16]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.471      ;
+; 1.215 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[9]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.481      ;
+; 1.223 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.489      ;
+; 1.224 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.490      ;
+; 1.230 ; cptbe:C1|valint[7]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.496      ;
+; 1.235 ; cptbe:C1|valint[5]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.501      ;
+; 1.238 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.504      ;
+; 1.240 ; div2                                  ; clock_divider:exertier|counter[1]     ; clk          ; clk         ; 0.000        ; 0.004      ; 1.510      ;
+; 1.241 ; cptbe:C1|valint[9]                    ; cptbe:C1|valint[3]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 1.508      ;
+; 1.243 ; cptbe:C2|valint[5]                    ; cptbe:C2|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.509      ;
+; 1.249 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.515      ;
+; 1.255 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.521      ;
+; 1.256 ; button:buttonDown|resync              ; headControle:snakeHead|present.pRight ; clk          ; clk         ; 0.000        ; -0.001     ; 1.521      ;
+; 1.256 ; button:buttonDown|resync              ; headControle:snakeHead|present.pLeft  ; clk          ; clk         ; 0.000        ; -0.001     ; 1.521      ;
+; 1.256 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.522      ;
+; 1.259 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.525      ;
+; 1.263 ; button:buttonLeft|resync              ; headControle:snakeHead|present.pDown  ; clk          ; clk         ; 0.000        ; -0.001     ; 1.528      ;
+; 1.263 ; button:buttonLeft|resync              ; headControle:snakeHead|present.pUp    ; clk          ; clk         ; 0.000        ; -0.001     ; 1.528      ;
+; 1.263 ; clock_divider:exertier|counter[6]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.529      ;
+; 1.280 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.546      ;
+; 1.280 ; cptbe:C1|valint[3]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 1.545      ;
+; 1.281 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.002      ; 1.549      ;
+; 1.287 ; cptbe:C2|valint[6]                    ; cptbe:C2|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.553      ;
+; 1.294 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.560      ;
+; 1.295 ; clock_divider:exertier|counter[13]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.561      ;
+; 1.309 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.575      ;
+; 1.320 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.586      ;
+; 1.327 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.593      ;
+; 1.330 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.596      ;
+; 1.336 ; clock_divider:exertier|counter[8]     ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.002      ; 1.604      ;
+; 1.338 ; clock_divider:exertier|counter[17]    ; clock_divider:exertier|counter[17]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.604      ;
+; 1.340 ; clock_divider:exertier|counter[14]    ; clock_divider:exertier|counter[14]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.606      ;
+; 1.341 ; clock_divider:exertier|counter[6]     ; clock_divider:exertier|counter[6]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.607      ;
+; 1.351 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.617      ;
+; 1.352 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.002      ; 1.620      ;
+; 1.362 ; clock_divider:exertier|counter[18]    ; clock_divider:exertier|counter[18]    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.628      ;
+; 1.365 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.631      ;
+; 1.366 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 1.632      ;
+; 1.384 ; cptbe:C2|valint[2]                    ; cptbe:C2|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.650      ;
+; 1.385 ; cptbe:C2|valint[1]                    ; cptbe:C2|valint[2]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 1.650      ;
+; 1.388 ; cptbe:C2|valint[9]                    ; cptbe:C2|valint[9]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.654      ;
+; 1.394 ; cptbe:C1|valint[5]                    ; cptbe:C1|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.660      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'fourKey[1]'                                                                                                        ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.269 ; button:buttonDown|resync ; button:buttonDown|buttonCliked ; clk          ; fourKey[1]  ; 0.500        ; -0.320     ; 1.485      ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'fourKey[2]'                                                                                                        ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.173 ; button:buttonLeft|resync ; button:buttonLeft|buttonCliked ; clk          ; fourKey[2]  ; 0.500        ; -0.405     ; 1.304      ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'fourKey[3]'                                                                                                          ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                 ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.912 ; button:buttonRigth|resync ; button:buttonRigth|buttonCliked ; clk          ; fourKey[3]  ; 0.500        ; 0.246      ; 1.694      ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'fourKey[0]'                                                                                                    ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.376 ; button:buttonUp|resync ; button:buttonUp|buttonCliked ; clk          ; fourKey[0]  ; 0.500        ; 0.530      ; 1.442      ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'fourKey[0]'                                                                                                    ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.146 ; button:buttonUp|resync ; button:buttonUp|buttonCliked ; clk          ; fourKey[0]  ; -0.500       ; 0.530      ; 1.442      ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'fourKey[3]'                                                                                                          ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.682 ; button:buttonRigth|resync ; button:buttonRigth|buttonCliked ; clk          ; fourKey[3]  ; -0.500       ; 0.246      ; 1.694      ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'fourKey[2]'                                                                                                        ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.943 ; button:buttonLeft|resync ; button:buttonLeft|buttonCliked ; clk          ; fourKey[2]  ; -0.500       ; -0.405     ; 1.304      ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'fourKey[1]'                                                                                                        ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; 2.039 ; button:buttonDown|resync ; button:buttonDown|buttonCliked ; clk          ; fourKey[1]  ; -0.500       ; -0.320     ; 1.485      ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonDown|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonDown|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonLeft|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonLeft|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonRigth|resync             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonRigth|resync             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonUp|resync                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonUp|resync                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|en_user        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|en_user        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; div2                                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; div2                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pDown  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pDown  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pLeft  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pLeft  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pRight ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pRight ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pUp    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pUp    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; inversibleCompteur:Xaxis|registre[0]  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'fourKey[0]'                                                                       ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[0] ; Rise       ; fourKey[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[0] ; Fall       ; button:buttonUp|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[0] ; Fall       ; button:buttonUp|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[0] ; Rise       ; buttonUp|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[0] ; Rise       ; buttonUp|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[0] ; Rise       ; fourKey[0]|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[0] ; Rise       ; fourKey[0]|combout           ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'fourKey[1]'                                                                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[1] ; Rise       ; fourKey[1]                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[1] ; Fall       ; button:buttonDown|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[1] ; Fall       ; button:buttonDown|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[1] ; Rise       ; buttonDown|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[1] ; Rise       ; buttonDown|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[1] ; Rise       ; fourKey[1]|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[1] ; Rise       ; fourKey[1]|combout             ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'fourKey[2]'                                                                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[2] ; Rise       ; fourKey[2]                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[2] ; Fall       ; button:buttonLeft|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[2] ; Fall       ; button:buttonLeft|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[2] ; Rise       ; buttonLeft|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[2] ; Rise       ; buttonLeft|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[2] ; Rise       ; fourKey[2]|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[2] ; Rise       ; fourKey[2]|combout             ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'fourKey[3]'                                                                          ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[3] ; Rise       ; fourKey[3]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[3] ; Fall       ; button:buttonRigth|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[3] ; Fall       ; button:buttonRigth|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[3] ; Rise       ; buttonRigth|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[3] ; Rise       ; buttonRigth|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[3] ; Rise       ; fourKey[3]|combout              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[3] ; Rise       ; fourKey[3]|combout              ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; blank       ; clk        ; 11.499 ; 11.499 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 7.722  ; 7.722  ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 8.266  ; 8.266  ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 7.932  ; 7.932  ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 8.266  ; 8.266  ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 7.437  ; 7.437  ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 7.526  ; 7.526  ; Rise       ; clk             ;
+; hsync       ; clk        ; 10.565 ; 10.565 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 12.759 ; 12.759 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 12.801 ; 12.801 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 12.801 ; 12.801 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 12.751 ; 12.751 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 12.499 ; 12.499 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 12.489 ; 12.489 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 12.489 ; 12.489 ; Rise       ; clk             ;
+; vsync       ; clk        ; 10.321 ; 10.321 ; Rise       ; clk             ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; blank       ; clk        ; 9.092 ; 9.092 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 7.722 ; 7.722 ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 7.437 ; 7.437 ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 7.932 ; 7.932 ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 8.266 ; 8.266 ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 7.437 ; 7.437 ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 7.526 ; 7.526 ; Rise       ; clk             ;
+; hsync       ; clk        ; 8.922 ; 8.922 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 9.296 ; 9.296 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 9.566 ; 9.566 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 9.608 ; 9.608 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 9.608 ; 9.608 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 9.618 ; 9.618 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 9.618 ; 9.618 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 9.558 ; 9.558 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 9.306 ; 9.306 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 9.316 ; 9.316 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 9.296 ; 9.296 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 9.296 ; 9.296 ; Rise       ; clk             ;
+; vsync       ; clk        ; 8.232 ; 8.232 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -0.780 ; -16.164       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------------+
+; Fast Model Recovery Summary         ;
++------------+--------+---------------+
+; Clock      ; Slack  ; End Point TNS ;
++------------+--------+---------------+
+; fourKey[1] ; -0.661 ; -0.661        ;
+; fourKey[2] ; -0.632 ; -0.632        ;
+; fourKey[3] ; -0.486 ; -0.486        ;
+; fourKey[0] ; -0.240 ; -0.240        ;
++------------+--------+---------------+
+
+
++------------------------------------+
+; Fast Model Removal Summary         ;
++------------+-------+---------------+
+; Clock      ; Slack ; End Point TNS ;
++------------+-------+---------------+
+; fourKey[0] ; 1.120 ; 0.000         ;
+; fourKey[3] ; 1.366 ; 0.000         ;
+; fourKey[2] ; 1.512 ; 0.000         ;
+; fourKey[1] ; 1.541 ; 0.000         ;
++------------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++------------+--------+------------------+
+; Clock      ; Slack  ; End Point TNS    ;
++------------+--------+------------------+
+; clk        ; -1.380 ; -56.380          ;
+; fourKey[0] ; -1.222 ; -2.222           ;
+; fourKey[1] ; -1.222 ; -2.222           ;
+; fourKey[2] ; -1.222 ; -2.222           ;
+; fourKey[3] ; -1.222 ; -2.222           ;
++------------+--------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                                                                ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.780 ; div2                               ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.007      ; 1.819      ;
+; -0.743 ; div2                               ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.007      ; 1.782      ;
+; -0.689 ; div2                               ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.007      ; 1.728      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.668 ; div2                               ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.698      ;
+; -0.664 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.698      ;
+; -0.657 ; div2                               ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.688      ;
+; -0.657 ; div2                               ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.688      ;
+; -0.657 ; div2                               ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.688      ;
+; -0.627 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.661      ;
+; -0.585 ; div2                               ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.007      ; 1.624      ;
+; -0.578 ; div2                               ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.007      ; 1.617      ;
+; -0.573 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.607      ;
+; -0.564 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.596      ;
+; -0.563 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.595      ;
+; -0.526 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.558      ;
+; -0.525 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.557      ;
+; -0.520 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.552      ;
+; -0.519 ; clock_divider:exertier|counter[13] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.551      ;
+; -0.518 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.550      ;
+; -0.517 ; clock_divider:exertier|counter[18] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.549      ;
+; -0.504 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.538      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.484 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.513      ;
+; -0.483 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.515      ;
+; -0.482 ; clock_divider:exertier|counter[16] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.514      ;
+; -0.473 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.503      ;
+; -0.473 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.503      ;
+; -0.473 ; cptbe:C2|valint[4]                 ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; -0.002     ; 1.503      ;
+; -0.469 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.503      ;
+; -0.467 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.501      ;
+; -0.462 ; clock_divider:exertier|counter[1]  ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.496      ;
+; -0.454 ; clock_divider:exertier|counter[3]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.488      ;
+; -0.437 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.469      ;
+; -0.436 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.468      ;
+; -0.436 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.468      ;
+; -0.436 ; clock_divider:exertier|counter[17] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.468      ;
+; -0.434 ; clock_divider:exertier|counter[4]  ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.468      ;
+; -0.432 ; clock_divider:exertier|counter[5]  ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.466      ;
+; -0.431 ; clock_divider:exertier|counter[5]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.465      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.430 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.461      ;
+; -0.419 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.451      ;
+; -0.419 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.451      ;
+; -0.419 ; cptbe:C2|valint[9]                 ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.451      ;
+; -0.417 ; clock_divider:exertier|counter[3]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.451      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.415 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.446      ;
+; -0.413 ; clock_divider:exertier|counter[2]  ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.447      ;
+; -0.408 ; clock_divider:exertier|counter[19] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.440      ;
+; -0.407 ; clock_divider:exertier|counter[19] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.439      ;
+; -0.405 ; clock_divider:exertier|counter[11] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.437      ;
+; -0.404 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[1]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.436      ;
+; -0.404 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[2]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.436      ;
+; -0.404 ; cptbe:C2|valint[5]                 ; cptbe:C1|valint[3]                 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.436      ;
+; -0.404 ; clock_divider:exertier|counter[11] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.436      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.403 ; cptbe:C2|valint[8]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.432      ;
+; -0.402 ; clock_divider:exertier|counter[14] ; clock_divider:exertier|counter[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.434      ;
+; -0.401 ; clock_divider:exertier|counter[14] ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.433      ;
+; -0.399 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|en_user     ; clk          ; clk         ; 1.000        ; 0.000      ; 1.431      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[5]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[7]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[6]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; cptbe:C2|valint[3]                 ; cptbe:C1|valint[8]                 ; clk          ; clk         ; 1.000        ; -0.003     ; 1.427      ;
+; -0.398 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.430      ;
+; -0.398 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.430      ;
+; -0.398 ; clock_divider:exertier|counter[15] ; clock_divider:exertier|counter[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.430      ;
+; -0.397 ; clock_divider:exertier|counter[4]  ; clock_divider:exertier|counter[19] ; clk          ; clk         ; 1.000        ; 0.002      ; 1.431      ;
+; -0.395 ; cptbe:C2|valint[6]                 ; cptbe:C1|valint[0]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.426      ;
+; -0.395 ; cptbe:C2|valint[6]                 ; cptbe:C1|valint[9]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.426      ;
+; -0.395 ; cptbe:C2|valint[6]                 ; cptbe:C1|valint[4]                 ; clk          ; clk         ; 1.000        ; -0.001     ; 1.426      ;
++--------+------------------------------------+------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                                                                      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; div2                                  ; div2                                  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; headControle:snakeHead|present.pRight ; headControle:snakeHead|present.pRight ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; headControle:snakeHead|present.pLeft  ; headControle:snakeHead|present.pLeft  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; headControle:snakeHead|present.pDown  ; headControle:snakeHead|present.pDown  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; headControle:snakeHead|present.pUp    ; headControle:snakeHead|present.pUp    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.355 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.507      ;
+; 0.358 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.510      ;
+; 0.359 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.511      ;
+; 0.360 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.512      ;
+; 0.361 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.362 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.514      ;
+; 0.364 ; clock_divider:exertier|counter[7]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; cptbe:C2|valint[6]                    ; cptbe:C2|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.365 ; clock_divider:exertier|counter[8]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.518      ;
+; 0.369 ; cptbe:C1|valint[8]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.521      ;
+; 0.369 ; inversibleCompteur:Yaxis|registre[0]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.521      ;
+; 0.370 ; cptbe:C1|valint[0]                    ; cptbe:C1|valint[0]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.371 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[2]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; clock_divider:exertier|counter[15]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; clock_divider:exertier|counter[13]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.523      ;
+; 0.374 ; cptbe:C1|valint[7]                    ; cptbe:C1|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.526      ;
+; 0.378 ; cptbe:C2|valint[7]                    ; cptbe:C2|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; cptbe:C1|valint[5]                    ; cptbe:C1|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.378 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.530      ;
+; 0.379 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[4]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.531      ;
+; 0.381 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.533      ;
+; 0.382 ; cptbe:C2|valint[5]                    ; cptbe:C2|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
+; 0.382 ; cptbe:C2|valint[2]                    ; cptbe:C2|valint[2]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
+; 0.382 ; inversibleCompteur:Xaxis|registre[0]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.534      ;
+; 0.392 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.544      ;
+; 0.392 ; inversibleCompteur:Yaxis|registre[2]  ; inversibleCompteur:Yaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.544      ;
+; 0.401 ; button:buttonLeft|buttonCliked        ; button:buttonLeft|resync              ; fourKey[2]   ; clk         ; -0.500       ; 0.426      ; 0.479      ;
+; 0.411 ; clock_divider:exertier|counter[19]    ; clock_divider:exertier|counter[19]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.563      ;
+; 0.417 ; cptbe:C1|valint[9]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.569      ;
+; 0.442 ; clock_divider:exertier|counter[1]     ; clock_divider:exertier|counter[1]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.594      ;
+; 0.448 ; button:buttonDown|buttonCliked        ; button:buttonDown|resync              ; fourKey[1]   ; clk         ; -0.500       ; 0.377      ; 0.477      ;
+; 0.452 ; inversibleCompteur:Xaxis|registre[2]  ; inversibleCompteur:Xaxis|registre[1]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.604      ;
+; 0.465 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.617      ;
+; 0.467 ; inversibleCompteur:Xaxis|registre[1]  ; inversibleCompteur:Xaxis|registre[0]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.619      ;
+; 0.469 ; inversibleCompteur:Yaxis|registre[1]  ; inversibleCompteur:Yaxis|registre[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.621      ;
+; 0.493 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.645      ;
+; 0.496 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.497 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.649      ;
+; 0.498 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.650      ;
+; 0.501 ; clock_divider:exertier|counter[14]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.653      ;
+; 0.502 ; clock_divider:exertier|counter[7]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.654      ;
+; 0.504 ; clock_divider:exertier|counter[6]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.656      ;
+; 0.511 ; cptbe:C2|valint[0]                    ; cptbe:C2|valint[9]                    ; clk          ; clk         ; 0.000        ; -0.002     ; 0.661      ;
+; 0.511 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[3]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.663      ;
+; 0.511 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.663      ;
+; 0.514 ; cptbe:C1|valint[7]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.666      ;
+; 0.518 ; cptbe:C1|valint[5]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.670      ;
+; 0.519 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.671      ;
+; 0.522 ; cptbe:C2|valint[5]                    ; cptbe:C2|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.674      ;
+; 0.528 ; clock_divider:exertier|counter[16]    ; clock_divider:exertier|counter[16]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.680      ;
+; 0.528 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[12]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.680      ;
+; 0.531 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.683      ;
+; 0.531 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.683      ;
+; 0.532 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.684      ;
+; 0.538 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[9]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.690      ;
+; 0.539 ; clock_divider:exertier|counter[6]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.691      ;
+; 0.545 ; cptbe:C1|valint[0]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.697      ;
+; 0.546 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[4]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.698      ;
+; 0.546 ; clock_divider:exertier|counter[13]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.698      ;
+; 0.549 ; cptbe:C1|valint[9]                    ; cptbe:C1|valint[3]                    ; clk          ; clk         ; 0.000        ; 0.001      ; 0.702      ;
+; 0.549 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.002      ; 0.703      ;
+; 0.554 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.554 ; cptbe:C1|valint[4]                    ; cptbe:C1|valint[6]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.706      ;
+; 0.558 ; cptbe:C2|valint[6]                    ; cptbe:C2|valint[7]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.710      ;
+; 0.562 ; button:buttonLeft|resync              ; headControle:snakeHead|present.pDown  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.714      ;
+; 0.562 ; div2                                  ; clock_divider:exertier|counter[1]     ; clk          ; clk         ; 0.000        ; 0.005      ; 0.719      ;
+; 0.563 ; clock_divider:exertier|counter[10]    ; clock_divider:exertier|counter[13]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.715      ;
+; 0.566 ; clock_divider:exertier|counter[5]     ; clock_divider:exertier|counter[8]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.718      ;
+; 0.568 ; clock_divider:exertier|counter[12]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.720      ;
+; 0.571 ; button:buttonLeft|resync              ; headControle:snakeHead|present.pUp    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.723      ;
+; 0.576 ; button:buttonDown|resync              ; headControle:snakeHead|present.pRight ; clk          ; clk         ; 0.000        ; 0.000      ; 0.728      ;
+; 0.577 ; button:buttonDown|resync              ; headControle:snakeHead|present.pLeft  ; clk          ; clk         ; 0.000        ; 0.000      ; 0.729      ;
+; 0.581 ; clock_divider:exertier|counter[4]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.733      ;
+; 0.581 ; clock_divider:exertier|counter[2]     ; clock_divider:exertier|counter[5]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.733      ;
+; 0.584 ; clock_divider:exertier|counter[9]     ; clock_divider:exertier|counter[11]    ; clk          ; clk         ; 0.000        ; 0.002      ; 0.738      ;
+; 0.588 ; cptbe:C1|valint[3]                    ; cptbe:C1|valint[9]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.739      ;
+; 0.588 ; clock_divider:exertier|counter[8]     ; clock_divider:exertier|counter[10]    ; clk          ; clk         ; 0.000        ; 0.002      ; 0.742      ;
+; 0.589 ; cptbe:C2|valint[1]                    ; cptbe:C2|valint[2]                    ; clk          ; clk         ; 0.000        ; -0.002     ; 0.739      ;
+; 0.589 ; cptbe:C1|valint[6]                    ; cptbe:C1|valint[8]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.741      ;
+; 0.592 ; cptbe:C2|valint[2]                    ; cptbe:C2|valint[5]                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.744      ;
+; 0.601 ; cptbe:C1|valint[3]                    ; cptbe:C1|valint[4]                    ; clk          ; clk         ; 0.000        ; -0.001     ; 0.752      ;
+; 0.601 ; clock_divider:exertier|counter[3]     ; clock_divider:exertier|counter[7]     ; clk          ; clk         ; 0.000        ; 0.000      ; 0.753      ;
+; 0.602 ; clock_divider:exertier|counter[11]    ; clock_divider:exertier|counter[15]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.754      ;
+; 0.602 ; cptbe:C2|valint[4]                    ; cptbe:C2|valint[5]                    ; clk          ; clk         ; 0.000        ; -0.002     ; 0.752      ;
+; 0.604 ; clock_divider:exertier|counter[17]    ; clock_divider:exertier|counter[17]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.756      ;
+; 0.606 ; clock_divider:exertier|counter[14]    ; clock_divider:exertier|counter[14]    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.758      ;
++-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'fourKey[1]'                                                                                                        ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.661 ; button:buttonDown|resync ; button:buttonDown|buttonCliked ; clk          ; fourKey[1]  ; 0.500        ; -0.377     ; 0.816      ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'fourKey[2]'                                                                                                        ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.632 ; button:buttonLeft|resync ; button:buttonLeft|buttonCliked ; clk          ; fourKey[2]  ; 0.500        ; -0.426     ; 0.738      ;
++--------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'fourKey[3]'                                                                                                          ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                 ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.486 ; button:buttonRigth|resync ; button:buttonRigth|buttonCliked ; clk          ; fourKey[3]  ; 0.500        ; -0.110     ; 0.908      ;
++--------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'fourKey[0]'                                                                                                    ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.240 ; button:buttonUp|resync ; button:buttonUp|buttonCliked ; clk          ; fourKey[0]  ; 0.500        ; 0.033      ; 0.805      ;
++--------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'fourKey[0]'                                                                                                    ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.120 ; button:buttonUp|resync ; button:buttonUp|buttonCliked ; clk          ; fourKey[0]  ; -0.500       ; 0.033      ; 0.805      ;
++-------+------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'fourKey[3]'                                                                                                          ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.366 ; button:buttonRigth|resync ; button:buttonRigth|buttonCliked ; clk          ; fourKey[3]  ; -0.500       ; -0.110     ; 0.908      ;
++-------+---------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'fourKey[2]'                                                                                                        ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.512 ; button:buttonLeft|resync ; button:buttonLeft|buttonCliked ; clk          ; fourKey[2]  ; -0.500       ; -0.426     ; 0.738      ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'fourKey[1]'                                                                                                        ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.541 ; button:buttonDown|resync ; button:buttonDown|buttonCliked ; clk          ; fourKey[1]  ; -0.500       ; -0.377     ; 0.816      ;
++-------+--------------------------+--------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonDown|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonDown|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonLeft|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonLeft|resync              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonRigth|resync             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonRigth|resync             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; button:buttonUp|resync                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; button:buttonUp|resync                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[10]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[11]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[12]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[13]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[14]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[15]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[16]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[17]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[18]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[19]    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[1]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[2]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[3]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[4]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[5]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[6]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[7]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[8]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|counter[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|counter[9]     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; clock_divider:exertier|en_user        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; clock_divider:exertier|en_user        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C1|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C1|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[3]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[4]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[5]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[6]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[7]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[8]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; cptbe:C2|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; cptbe:C2|valint[9]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; div2                                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; div2                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pDown  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pDown  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pLeft  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pLeft  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pRight ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pRight ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; headControle:snakeHead|present.pUp    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; headControle:snakeHead|present.pUp    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; inversibleCompteur:Xaxis|registre[0]  ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'fourKey[0]'                                                                       ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[0] ; Rise       ; fourKey[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[0] ; Fall       ; button:buttonUp|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[0] ; Fall       ; button:buttonUp|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[0] ; Rise       ; buttonUp|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[0] ; Rise       ; buttonUp|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[0] ; Rise       ; fourKey[0]|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[0] ; Rise       ; fourKey[0]|combout           ;
++--------+--------------+----------------+------------------+------------+------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'fourKey[1]'                                                                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[1] ; Rise       ; fourKey[1]                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[1] ; Fall       ; button:buttonDown|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[1] ; Fall       ; button:buttonDown|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[1] ; Rise       ; buttonDown|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[1] ; Rise       ; buttonDown|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[1] ; Rise       ; fourKey[1]|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[1] ; Rise       ; fourKey[1]|combout             ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'fourKey[2]'                                                                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[2] ; Rise       ; fourKey[2]                     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[2] ; Fall       ; button:buttonLeft|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[2] ; Fall       ; button:buttonLeft|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[2] ; Rise       ; buttonLeft|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[2] ; Rise       ; buttonLeft|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[2] ; Rise       ; fourKey[2]|combout             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[2] ; Rise       ; fourKey[2]|combout             ;
++--------+--------------+----------------+------------------+------------+------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'fourKey[3]'                                                                          ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock      ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; fourKey[3] ; Rise       ; fourKey[3]                      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; fourKey[3] ; Fall       ; button:buttonRigth|buttonCliked ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; fourKey[3] ; Fall       ; button:buttonRigth|buttonCliked ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[3] ; Rise       ; buttonRigth|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[3] ; Rise       ; buttonRigth|buttonCliked|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; fourKey[3] ; Rise       ; fourKey[3]|combout              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; fourKey[3] ; Rise       ; fourKey[3]|combout              ;
++--------+--------------+----------------+------------------+------------+------------+---------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; blank       ; clk        ; 5.964 ; 5.964 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 4.334 ; 4.334 ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 4.564 ; 4.564 ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 4.413 ; 4.413 ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 4.564 ; 4.564 ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 4.235 ; 4.235 ; Rise       ; clk             ;
+; hsync       ; clk        ; 5.566 ; 5.566 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 6.527 ; 6.527 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 6.548 ; 6.548 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 6.548 ; 6.548 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 6.558 ; 6.558 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 6.520 ; 6.520 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 6.399 ; 6.399 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 6.409 ; 6.409 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 6.389 ; 6.389 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 6.389 ; 6.389 ; Rise       ; clk             ;
+; vsync       ; clk        ; 5.444 ; 5.444 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; blank       ; clk        ; 4.899 ; 4.899 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 4.334 ; 4.334 ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 4.413 ; 4.413 ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 4.564 ; 4.564 ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 4.235 ; 4.235 ; Rise       ; clk             ;
+; hsync       ; clk        ; 4.837 ; 4.837 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 5.131 ; 5.131 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 5.152 ; 5.152 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 5.152 ; 5.152 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 5.162 ; 5.162 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 5.162 ; 5.162 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 5.124 ; 5.124 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 5.003 ; 5.003 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 5.013 ; 5.013 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+; vsync       ; clk        ; 4.517 ; 4.517 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.769  ; 0.215 ; -1.269   ; 1.120   ; -1.380              ;
+;  clk             ; -2.769  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  fourKey[0]      ; N/A     ; N/A   ; -0.376   ; 1.120   ; -1.222              ;
+;  fourKey[1]      ; N/A     ; N/A   ; -1.269   ; 1.541   ; -1.222              ;
+;  fourKey[2]      ; N/A     ; N/A   ; -1.173   ; 1.512   ; -1.222              ;
+;  fourKey[3]      ; N/A     ; N/A   ; -0.912   ; 1.366   ; -1.222              ;
+; Design-wide TNS  ; -91.469 ; 0.0   ; -3.73    ; 0.0     ; -65.268             ;
+;  clk             ; -91.469 ; 0.000 ; N/A      ; N/A     ; -56.380             ;
+;  fourKey[0]      ; N/A     ; N/A   ; -0.376   ; 0.000   ; -2.222              ;
+;  fourKey[1]      ; N/A     ; N/A   ; -1.269   ; 0.000   ; -2.222              ;
+;  fourKey[2]      ; N/A     ; N/A   ; -1.173   ; 0.000   ; -2.222              ;
+;  fourKey[3]      ; N/A     ; N/A   ; -0.912   ; 0.000   ; -2.222              ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; blank       ; clk        ; 11.499 ; 11.499 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 7.722  ; 7.722  ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 8.266  ; 8.266  ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 7.932  ; 7.932  ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 8.266  ; 8.266  ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 7.437  ; 7.437  ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 7.526  ; 7.526  ; Rise       ; clk             ;
+; hsync       ; clk        ; 10.565 ; 10.565 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 12.759 ; 12.759 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 12.801 ; 12.801 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 12.801 ; 12.801 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 12.811 ; 12.811 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 12.751 ; 12.751 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 12.499 ; 12.499 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 12.509 ; 12.509 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 12.489 ; 12.489 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 12.489 ; 12.489 ; Rise       ; clk             ;
+; vsync       ; clk        ; 10.321 ; 10.321 ; Rise       ; clk             ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; blank       ; clk        ; 4.899 ; 4.899 ; Rise       ; clk             ;
+; clk_vga     ; clk        ; 4.334 ; 4.334 ; Rise       ; clk             ;
+; fourLed[*]  ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+;  fourLed[0] ; clk        ; 4.413 ; 4.413 ; Rise       ; clk             ;
+;  fourLed[1] ; clk        ; 4.564 ; 4.564 ; Rise       ; clk             ;
+;  fourLed[2] ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+;  fourLed[3] ; clk        ; 4.235 ; 4.235 ; Rise       ; clk             ;
+; hsync       ; clk        ; 4.837 ; 4.837 ; Rise       ; clk             ;
+; red[*]      ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+;  red[0]     ; clk        ; 5.131 ; 5.131 ; Rise       ; clk             ;
+;  red[1]     ; clk        ; 5.152 ; 5.152 ; Rise       ; clk             ;
+;  red[2]     ; clk        ; 5.152 ; 5.152 ; Rise       ; clk             ;
+;  red[3]     ; clk        ; 5.162 ; 5.162 ; Rise       ; clk             ;
+;  red[4]     ; clk        ; 5.162 ; 5.162 ; Rise       ; clk             ;
+;  red[5]     ; clk        ; 5.124 ; 5.124 ; Rise       ; clk             ;
+;  red[6]     ; clk        ; 5.003 ; 5.003 ; Rise       ; clk             ;
+;  red[7]     ; clk        ; 5.013 ; 5.013 ; Rise       ; clk             ;
+;  red[8]     ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+;  red[9]     ; clk        ; 4.993 ; 4.993 ; Rise       ; clk             ;
+; vsync       ; clk        ; 4.517 ; 4.517 ; Rise       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 766      ; 0        ; 0        ; 0        ;
+; fourKey[0] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[1] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[2] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[3] ; clk      ; 0        ; 1        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 766      ; 0        ; 0        ; 0        ;
+; fourKey[0] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[1] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[2] ; clk      ; 0        ; 1        ; 0        ; 0        ;
+; fourKey[3] ; clk      ; 0        ; 1        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Recovery Transfers                                                  ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; clk        ; fourKey[0] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[1] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[2] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[3] ; 0        ; 0        ; 1        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------+
+; Removal Transfers                                                   ;
++------------+------------+----------+----------+----------+----------+
+; From Clock ; To Clock   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+------------+----------+----------+----------+----------+
+; clk        ; fourKey[0] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[1] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[2] ; 0        ; 0        ; 1        ; 0        ;
+; clk        ; fourKey[3] ; 0        ; 0        ; 1        ; 0        ;
++------------+------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 51    ; 51   ;
+; Unconstrained Output Ports      ; 18    ; 18   ;
+; Unconstrained Output Port Paths ; 302   ; 302  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Apr 23 19:44:44 2012
+Info: Command: quartus_sta Snaky -c Snaky
+Info: qsta_default_script.tcl version: #1
+Info (293032): Detected changes in source files.
+    Info (293027): Source file: /root/yami/Bureau/vhdl/headControle.vhd has changed.
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Snaky.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name fourKey[2] fourKey[2]
+    Info (332105): create_clock -period 1.000 -name fourKey[1] fourKey[1]
+    Info (332105): create_clock -period 1.000 -name fourKey[3] fourKey[3]
+    Info (332105): create_clock -period 1.000 -name fourKey[0] fourKey[0]
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.769
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.769       -91.469 clk 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 clk 
+Info (332146): Worst-case recovery slack is -1.269
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.269        -1.269 fourKey[1] 
+    Info (332119):    -1.173        -1.173 fourKey[2] 
+    Info (332119):    -0.912        -0.912 fourKey[3] 
+    Info (332119):    -0.376        -0.376 fourKey[0] 
+Info (332146): Worst-case removal slack is 1.146
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.146         0.000 fourKey[0] 
+    Info (332119):     1.682         0.000 fourKey[3] 
+    Info (332119):     1.943         0.000 fourKey[2] 
+    Info (332119):     2.039         0.000 fourKey[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -56.380 clk 
+    Info (332119):    -1.222        -2.222 fourKey[0] 
+    Info (332119):    -1.222        -2.222 fourKey[1] 
+    Info (332119):    -1.222        -2.222 fourKey[2] 
+    Info (332119):    -1.222        -2.222 fourKey[3] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (306004): Started post-fitting delay annotation
+Warning (306006): Found 39 output pins without output pin load capacitance assignment
+    Info (306007): Pin "red[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "red[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "green[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[4]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[8]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blue[9]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "fourLed[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "fourLed[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "fourLed[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "fourLed[3]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "hsync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "vsync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "blank" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "clk_vga" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info (306007): Pin "sync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+Info (306005): Delay annotation completed successfully
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.780
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.780       -16.164 clk 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 clk 
+Info (332146): Worst-case recovery slack is -0.661
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.661        -0.661 fourKey[1] 
+    Info (332119):    -0.632        -0.632 fourKey[2] 
+    Info (332119):    -0.486        -0.486 fourKey[3] 
+    Info (332119):    -0.240        -0.240 fourKey[0] 
+Info (332146): Worst-case removal slack is 1.120
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.120         0.000 fourKey[0] 
+    Info (332119):     1.366         0.000 fourKey[3] 
+    Info (332119):     1.512         0.000 fourKey[2] 
+    Info (332119):     1.541         0.000 fourKey[1] 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -56.380 clk 
+    Info (332119):    -1.222        -2.222 fourKey[0] 
+    Info (332119):    -1.222        -2.222 fourKey[1] 
+    Info (332119):    -1.222        -2.222 fourKey[2] 
+    Info (332119):    -1.222        -2.222 fourKey[3] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 302 megabytes
+    Info: Processing ended: Mon Apr 23 19:44:48 2012
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

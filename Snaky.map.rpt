@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Snaky
-Mon Apr 23 16:27:31 2012
+Mon Apr 23 19:47:48 2012
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -23,10 +23,9 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
  15. Parameter Settings for User Entity Instance: clock_divider:exertier
  16. Parameter Settings for User Entity Instance: inversibleCompteur:Xaxis
  17. Parameter Settings for User Entity Instance: inversibleCompteur:Yaxis
- 18. Port Connectivity Checks: "headControle:snakeHead"
- 19. Port Connectivity Checks: "carre:U0"
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+ 18. Port Connectivity Checks: "carre:U0"
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -52,16 +51,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 23 16:27:31 2012         ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 23 19:47:48 2012         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Snaky                                         ;
 ; Top-level Entity Name              ; vga                                           ;
 ; Family                             ; Cyclone II                                    ;
-; Total logic elements               ; 148                                           ;
-;     Total combinational functions  ; 140                                           ;
-;     Dedicated logic registers      ; 58                                            ;
-; Total registers                    ; 58                                            ;
-; Total pins                         ; 41                                            ;
+; Total logic elements               ; 149                                           ;
+;     Total combinational functions  ; 141                                           ;
+;     Dedicated logic registers      ; 59                                            ;
+; Total registers                    ; 59                                            ;
+; Total pins                         ; 45                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                             ;
@@ -184,27 +183,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 148   ;
+; Estimated Total logic elements              ; 149   ;
 ;                                             ;       ;
-; Total combinational functions               ; 140   ;
+; Total combinational functions               ; 141   ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 56    ;
 ;     -- 3 input functions                    ; 18    ;
-;     -- <=2 input functions                  ; 66    ;
+;     -- <=2 input functions                  ; 67    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 88    ;
+;     -- normal mode                          ; 89    ;
 ;     -- arithmetic mode                      ; 52    ;
 ;                                             ;       ;
-; Total registers                             ; 58    ;
-;     -- Dedicated logic registers            ; 58    ;
+; Total registers                             ; 59    ;
+;     -- Dedicated logic registers            ; 59    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 41    ;
+; I/O pins                                    ; 45    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 54    ;
-; Total fan-out                               ; 610   ;
-; Average fan-out                             ; 2.55  ;
+; Maximum fan-out                             ; 55    ;
+; Total fan-out                               ; 619   ;
+; Average fan-out                             ; 2.53  ;
 +---------------------------------------------+-------+
 
 
@@ -213,7 +212,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Library Name ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
-; |vga                          ; 140 (4)           ; 58 (1)       ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |vga                          ;              ;
+; |vga                          ; 141 (4)           ; 59 (1)       ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |vga                          ;              ;
 ;    |button:buttonDown|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonDown        ;              ;
 ;    |button:buttonLeft|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonLeft        ;              ;
 ;    |button:buttonRigth|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonRigth       ;              ;
@@ -223,7 +222,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |controle:synch|           ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|controle:synch           ;              ;
 ;    |cptbe:C1|                 ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|cptbe:C1                 ;              ;
 ;    |cptbe:C2|                 ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|cptbe:C2                 ;              ;
-;    |headControle:snakeHead|   ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|headControle:snakeHead   ;              ;
+;    |headControle:snakeHead|   ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|headControle:snakeHead   ;              ;
 ;    |inversibleCompteur:Xaxis| ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|inversibleCompteur:Xaxis ;              ;
 ;    |inversibleCompteur:Yaxis| ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|inversibleCompteur:Yaxis ;              ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
@@ -253,8 +252,7 @@ Encoding Type:  One-Hot
 ; inversibleCompteur:Xaxis|registre[3..5] ; Stuck at GND due to stuck port data_in ;
 ; inversibleCompteur:Yaxis|registre[3..5] ; Stuck at GND due to stuck port data_in ;
 ; clock_divider:exertier|counter[0]       ; Merged with div2                       ;
-; headControle:snakeHead|present.pUp      ; Lost fanout                            ;
-; Total Number of Removed Registers = 16  ;                                        ;
+; Total Number of Removed Registers = 15  ;                                        ;
 +-----------------------------------------+----------------------------------------+
 
 
@@ -275,10 +273,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 58    ;
+; Total registers                              ; 59    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 54    ;
+; Number of registers using Asynchronous Clear ; 55    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 26    ;
 ; Number of registers using Preset             ; 0     ;
@@ -345,16 +343,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "headControle:snakeHead"                                                               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; haut   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; gauche ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +----------------------------------------------+
 ; Port Connectivity Checks: "carre:U0"         ;
 +------------+-------+----------+--------------+
@@ -383,7 +371,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 23 16:27:27 2012
+    Info: Processing started: Mon Apr 23 19:47:44 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Snaky -c Snaky
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file vga.vhd
@@ -451,16 +439,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "blue[8]" is stuck at GND
     Warning (13410): Pin "blue[9]" is stuck at GND
     Warning (13410): Pin "sync" is stuck at VCC
-Info (17049): 1 registers lost all their fanouts during netlist optimizations. The first 1 are displayed below.
-    Info (17050): Register "headControle:snakeHead|present.pUp" lost all its fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 35 output pins
-    Info (21061): Implemented 148 logic cells
+    Info (21059): Implemented 39 output pins
+    Info (21061): Implemented 149 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 23 warnings
     Info: Peak virtual memory: 338 megabytes
-    Info: Processing ended: Mon Apr 23 16:27:31 2012
+    Info: Processing ended: Mon Apr 23 19:47:48 2012
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

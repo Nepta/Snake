@@ -1,15 +1,15 @@
-Fitter Status : Successful - Mon Apr 23 16:27:39 2012
+Fitter Status : Successful - Mon Apr 23 19:48:09 2012
 Quartus II 32-bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition
 Revision Name : Snaky
 Top-level Entity Name : vga
 Family : Cyclone II
 Device : EP2C35F672C6
 Timing Models : Final
-Total logic elements : 145 / 33,216 ( < 1 % )
-    Total combinational functions : 144 / 33,216 ( < 1 % )
-    Dedicated logic registers : 58 / 33,216 ( < 1 % )
-Total registers : 58
-Total pins : 41 / 475 ( 9 % )
+Total logic elements : 148 / 33,216 ( < 1 % )
+    Total combinational functions : 145 / 33,216 ( < 1 % )
+    Dedicated logic registers : 59 / 33,216 ( < 1 % )
+Total registers : 59
+Total pins : 45 / 475 ( 9 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

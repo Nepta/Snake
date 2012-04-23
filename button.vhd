@@ -15,4 +15,5 @@ begin
 	buttonCliked <= '0' when resync = '1' else '1' when falling_edge(button);
 	resync <= buttonCliked when rising_edge(clk);
 	trigger <= resync;
+	
 end Behavioral;
