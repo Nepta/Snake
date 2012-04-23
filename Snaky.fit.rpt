@@ -1,5 +1,5 @@
 Fitter report for Snaky
-Mon Apr 23 15:57:37 2012
+Mon Apr 23 16:27:39 2012
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                     ;
 +------------------------------------+-----------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 23 15:57:37 2012         ;
+; Fitter Status                      ; Successful - Mon Apr 23 16:27:39 2012         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Snaky                                         ;
 ; Top-level Entity Name              ; vga                                           ;
@@ -89,6 +89,7 @@ applicable agreement for further details.
 ; Minimum Core Junction Temperature                                          ; 0                              ;                                ;
 ; Maximum Core Junction Temperature                                          ; 85                             ;                                ;
 ; Fit Attempts to Skip                                                       ; 0                              ; 0.0                            ;
+; Device I/O Standard                                                        ; 3.3-V LVTTL                    ;                                ;
 ; Use smart compilation                                                      ; Off                            ; Off                            ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                             ; On                             ;
 ; Enable compact report table                                                ; Off                            ; Off                            ;
@@ -146,8 +147,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 245 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 245 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 244 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 244 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -170,7 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 242     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 241     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -205,28 +206,28 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ;     -- Dedicated logic registers            ; 58 / 33,216 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 15 / 2,076 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 14 / 2,076 ( < 1 % )   ;
 ; User inserted logic elements                ; 0                      ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 41 / 475 ( 9 % )       ;
-;     -- Clock pins                           ; 2 / 8 ( 25 % )         ;
-; Global signals                              ; 2                      ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
+; Global signals                              ; 1                      ;
 ; M4Ks                                        ; 0 / 105 ( 0 % )        ;
 ; Total block memory bits                     ; 0 / 483,840 ( 0 % )    ;
 ; Total block memory implementation bits      ; 0 / 483,840 ( 0 % )    ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )         ;
 ; PLLs                                        ; 0 / 4 ( 0 % )          ;
-; Global clocks                               ; 2 / 16 ( 13 % )        ;
+; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 0% / 0% / 1%           ;
+; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%           ;
 ; Maximum fan-out node                        ; clk~clkctrl            ;
 ; Maximum fan-out                             ; 54                     ;
-; Highest non-global fan-out signal           ; div2                   ;
-; Highest non-global fan-out                  ; 15                     ;
-; Total fan-out                               ; 617                    ;
+; Highest non-global fan-out signal           ; raza                   ;
+; Highest non-global fan-out                  ; 50                     ;
+; Total fan-out                               ; 616                    ;
 ; Average fan-out                             ; 2.48                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -259,14 +260,14 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ;     -- Dedicated logic registers            ; 58 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 15 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 14 / 2076 ( < 1 % )   ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 41                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )        ; 0 / 70 ( 0 % )                 ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
-; Clock control block                         ; 2 / 20 ( 10 % )       ; 0 / 20 ( 0 % )                 ;
+; Clock control block                         ; 1 / 20 ( 5 % )        ; 0 / 20 ( 0 % )                 ;
 ;                                             ;                       ;                                ;
 ; Connections                                 ;                       ;                                ;
 ;     -- Input Connections                    ; 0                     ; 0                              ;
@@ -275,7 +276,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 617                   ; 0                              ;
+;     -- Total Connections                    ; 616                   ; 0                              ;
 ;     -- Registered Connections               ; 233                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -308,12 +309,12 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; clk        ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; fourKey[0] ; D13   ; 3        ; 31           ; 36           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; fourKey[1] ; C13   ; 3        ; 31           ; 36           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; fourKey[2] ; AA12  ; 8        ; 29           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; fourKey[3] ; D23   ; 5        ; 65           ; 34           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; raza       ; P1    ; 1        ; 0            ; 18           ; 3           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; clk        ; N2    ; 2        ; 0            ; 18           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; fourKey[0] ; W26   ; 6        ; 65           ; 10           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; fourKey[1] ; P23   ; 6        ; 65           ; 18           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; fourKey[2] ; N23   ; 5        ; 65           ; 20           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; fourKey[3] ; G26   ; 5        ; 65           ; 27           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; raza       ; V2    ; 1        ; 0            ; 12           ; 3           ; 50                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -322,41 +323,41 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 +----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; blank    ; B25   ; 5        ; 65           ; 32           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[0]  ; AC16  ; 7        ; 42           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[1]  ; AE17  ; 7        ; 44           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[2]  ; Y11   ; 8        ; 16           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[3]  ; P4    ; 1        ; 0            ; 17           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[4]  ; AC8   ; 8        ; 9            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[5]  ; W3    ; 1        ; 0            ; 9            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[6]  ; D26   ; 5        ; 65           ; 31           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[7]  ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[8]  ; L21   ; 5        ; 65           ; 24           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; blue[9]  ; W12   ; 8        ; 18           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; clk_vga  ; C17   ; 4        ; 46           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[0] ; AA1   ; 1        ; 0            ; 8            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[1] ; K25   ; 5        ; 65           ; 22           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[2] ; D16   ; 4        ; 40           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[3] ; V5    ; 1        ; 0            ; 8            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[4] ; H23   ; 5        ; 65           ; 27           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[5] ; A17   ; 4        ; 42           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[6] ; Y13   ; 7        ; 37           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[7] ; H15   ; 4        ; 42           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[8] ; H6    ; 2        ; 0            ; 31           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; green[9] ; AA20  ; 7        ; 57           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; hsync    ; F17   ; 4        ; 48           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[0]   ; P18   ; 5        ; 65           ; 29           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[1]   ; K21   ; 5        ; 65           ; 25           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[2]   ; G26   ; 5        ; 65           ; 27           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[3]   ; AF18  ; 7        ; 46           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[4]   ; AC19  ; 7        ; 53           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[5]   ; AF20  ; 7        ; 53           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[6]   ; AF19  ; 7        ; 48           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[7]   ; B24   ; 5        ; 65           ; 32           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[8]   ; W17   ; 7        ; 50           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; red[9]   ; AE21  ; 7        ; 55           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; sync     ; E5    ; 2        ; 0            ; 34           ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; vsync    ; G5    ; 2        ; 0            ; 33           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; blank    ; D6    ; 3        ; 11           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[0]  ; J13   ; 3        ; 24           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[1]  ; J14   ; 3        ; 24           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[2]  ; F12   ; 3        ; 27           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[3]  ; G12   ; 3        ; 27           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[4]  ; J10   ; 3        ; 27           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[5]  ; J11   ; 3        ; 27           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[6]  ; C11   ; 3        ; 29           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[7]  ; B11   ; 3        ; 29           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[8]  ; C12   ; 3        ; 29           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; blue[9]  ; B12   ; 3        ; 29           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; clk_vga  ; B8    ; 3        ; 16           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[0] ; B9    ; 3        ; 20           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[1] ; A9    ; 3        ; 20           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[2] ; C10   ; 3        ; 20           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[3] ; D10   ; 3        ; 20           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[4] ; B10   ; 3        ; 22           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[5] ; A10   ; 3        ; 22           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[6] ; G11   ; 3        ; 22           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[7] ; D11   ; 3        ; 22           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[8] ; E12   ; 3        ; 24           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; green[9] ; D12   ; 3        ; 24           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; hsync    ; A7    ; 3        ; 11           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[0]   ; C8    ; 3        ; 14           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[1]   ; F10   ; 3        ; 14           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[2]   ; G10   ; 3        ; 14           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[3]   ; D9    ; 3        ; 16           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[4]   ; C9    ; 3        ; 16           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[5]   ; A8    ; 3        ; 16           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[6]   ; H11   ; 3        ; 18           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[7]   ; H12   ; 3        ; 18           ; 36           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[8]   ; F11   ; 3        ; 18           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; red[9]   ; E10   ; 3        ; 18           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; sync     ; B7    ; 3        ; 11           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; vsync    ; D8    ; 3        ; 14           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
@@ -365,14 +366,14 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 +----------+------------------+---------------+--------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
-; 1        ; 6 / 64 ( 9 % )   ; 3.3V          ; --           ;
-; 2        ; 5 / 59 ( 8 % )   ; 3.3V          ; --           ;
-; 3        ; 3 / 56 ( 5 % )   ; 3.3V          ; --           ;
-; 4        ; 5 / 58 ( 9 % )   ; 3.3V          ; --           ;
-; 5        ; 10 / 65 ( 15 % ) ; 3.3V          ; --           ;
-; 6        ; 1 / 59 ( 2 % )   ; 3.3V          ; --           ;
-; 7        ; 10 / 58 ( 17 % ) ; 3.3V          ; --           ;
-; 8        ; 4 / 56 ( 7 % )   ; 3.3V          ; --           ;
+; 1        ; 1 / 64 ( 2 % )   ; 3.3V          ; --           ;
+; 2        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
+; 3        ; 35 / 56 ( 63 % ) ; 3.3V          ; --           ;
+; 4        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
+; 5        ; 2 / 65 ( 3 % )   ; 3.3V          ; --           ;
+; 6        ; 3 / 59 ( 5 % )   ; 3.3V          ; --           ;
+; 7        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
+; 8        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
 
@@ -386,17 +387,17 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; A4       ; 484        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A5       ; 482        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A6       ; 479        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A7       ; 465        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A8       ; 457        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A9       ; 451        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A10      ; 447        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A7       ; 465        ; 3        ; hsync                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A8       ; 457        ; 3        ; red[5]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A9       ; 451        ; 3        ; green[1]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A10      ; 447        ; 3        ; green[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A11      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A12      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A13      ; 430        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; A14      ; 427        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; A16      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; A17      ; 412        ; 4        ; green[5]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A17      ; 412        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A18      ; 406        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A19      ; 394        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A20      ; 390        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -405,7 +406,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; A23      ; 378        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A24      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; A25      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AA1      ; 107        ; 1        ; green[0]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA1      ; 107        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA2      ; 106        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA3      ; 117        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AA4      ; 116        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -416,7 +417,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AA9      ; 152        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA10     ; 153        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA11     ; 155        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AA12     ; 179        ; 8        ; fourKey[2]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA12     ; 179        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA13     ; 192        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA14     ; 194        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA15     ; 197        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -424,7 +425,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AA17     ; 219        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA18     ; 220        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA19     ;            ;          ; VCCA_PLL4                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; AA20     ; 230        ; 7        ; green[9]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA20     ; 230        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AA21     ;            ;          ; GND_PLL4                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA22     ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AA23     ; 256        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -464,7 +465,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AC5      ; 133        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC6      ; 134        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC7      ; 143        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC8      ; 148        ; 8        ; blue[4]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC8      ; 148        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC9      ; 163        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC10     ; 164        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC11     ; 168        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -472,10 +473,10 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AC13     ; 185        ; 8        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AC14     ; 191        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC15     ; 199        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC16     ; 202        ; 7        ; blue[0]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC16     ; 202        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC17     ; 207        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC18     ; 216        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC19     ; 222        ; 7        ; red[4]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AC19     ; 222        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC20     ; 226        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC21     ; 237        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC22     ; 241        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -525,11 +526,11 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AE14     ; 188        ; 7        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AE15     ; 189        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE16     ; 200        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE17     ; 206        ; 7        ; blue[1]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE17     ; 206        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE18     ; 212        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE19     ; 214        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE21     ; 228        ; 7        ; red[9]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE22     ; 236        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE23     ; 244        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE24     ; 247        ; 6        ; ~LVDS150p/nCEO~                          ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
@@ -551,9 +552,9 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; AF15     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF16     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF17     ; 205        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF18     ; 211        ; 7        ; red[3]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF19     ; 213        ; 7        ; red[6]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; AF20     ; 223        ; 7        ; red[5]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF18     ; 211        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF19     ; 213        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF20     ; 223        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF21     ; 227        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF22     ; 235        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF23     ; 243        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -565,12 +566,12 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; B4       ; 483        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B5       ; 481        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B6       ; 480        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B7       ; 466        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B8       ; 458        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B9       ; 452        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B10      ; 448        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B11      ; 435        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B12      ; 433        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; B7       ; 466        ; 3        ; sync                                     ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B8       ; 458        ; 3        ; clk_vga                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B9       ; 452        ; 3        ; green[0]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B10      ; 448        ; 3        ; green[4]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B11      ; 435        ; 3        ; blue[7]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B12      ; 433        ; 3        ; blue[9]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B13      ; 429        ; 4        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; B14      ; 428        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B15      ; 420        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -582,8 +583,8 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; B21      ; 381        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B22      ; 380        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B23      ; 377        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; B24      ; 363        ; 5        ; red[7]                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; B25      ; 362        ; 5        ; blank                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B24      ; 363        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; B25      ; 362        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B26      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C1       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; C2       ; 6          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -592,16 +593,16 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; C5       ; 486        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C6       ; 485        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C7       ; 468        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C8       ; 463        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C9       ; 459        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C11      ; 436        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C13      ; 431        ; 3        ; fourKey[1]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C8       ; 463        ; 3        ; red[0]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C9       ; 459        ; 3        ; red[4]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C10      ; 450        ; 3        ; green[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C11      ; 436        ; 3        ; blue[6]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C12      ; 434        ; 3        ; blue[8]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C13      ; 431        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 418        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C17      ; 404        ; 4        ; clk_vga                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C17      ; 404        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C18      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C19      ; 391        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C20      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -616,39 +617,39 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; D3       ; 1          ; 2        ; ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; D4       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D5       ; 477        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D6       ; 467        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; D6       ; 467        ; 3        ; blank                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; D7       ; 469        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D8       ; 464        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D9       ; 460        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D12      ; 443        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D13      ; 432        ; 3        ; fourKey[0]                               ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D8       ; 464        ; 3        ; vsync                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D9       ; 460        ; 3        ; red[3]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D10      ; 449        ; 3        ; green[3]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D11      ; 445        ; 3        ; green[7]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D12      ; 443        ; 3        ; green[9]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D13      ; 432        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D16      ; 415        ; 4        ; green[2]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D16      ; 415        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D17      ; 403        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 396        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D19      ; 392        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D20      ; 387        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D21      ; 376        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D22      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; D23      ; 369        ; 5        ; fourKey[3]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D23      ; 369        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D24      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D25      ; 358        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; D26      ; 359        ; 5        ; blue[6]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D26      ; 359        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E1       ; 20         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E2       ; 19         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E3       ; 0          ; 2        ; ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; E4       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E5       ; 4          ; 2        ; sync                                     ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E5       ; 4          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E6       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E7       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E8       ; 474        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; E10      ; 453        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E10      ; 453        ; 3        ; red[9]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E11      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E12      ; 444        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E12      ; 444        ; 3        ; green[8]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E13      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E14      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; E15      ; 416        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -672,14 +673,14 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; F7       ; 14         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F8       ;            ;          ; GNDA_PLL3                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F9       ; 470        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F10      ; 462        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F11      ; 454        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F12      ; 440        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F10      ; 462        ; 3        ; red[1]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F11      ; 454        ; 3        ; red[8]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; F12      ; 440        ; 3        ; blue[2]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F13      ; 423        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F14      ; 425        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F15      ; 409        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F16      ; 408        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F17      ; 401        ; 4        ; hsync                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F17      ; 401        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F18      ; 398        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F19      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F20      ; 372        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -693,14 +694,14 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; G2       ; 31         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G3       ; 24         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G4       ; 23         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; G5       ; 8          ; 2        ; vsync                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G5       ; 8          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G6       ; 9          ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G7       ;            ;          ; GND_PLL3                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCA_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G9       ; 471        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G10      ; 461        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G11      ; 446        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G12      ; 439        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G10      ; 461        ; 3        ; red[2]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G11      ; 446        ; 3        ; green[6]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G12      ; 439        ; 3        ; blue[3]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; G13      ; 422        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 424        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G15      ; 410        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -714,22 +715,22 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; G23      ; 346        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G24      ; 345        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G25      ; 343        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; G26      ; 342        ; 5        ; red[2]                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G26      ; 342        ; 5        ; fourKey[3]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H1       ; 37         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H2       ; 36         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H3       ; 32         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H4       ; 33         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H5       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H6       ; 18         ; 2        ; green[8]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H6       ; 18         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H7       ;            ;          ; VCCD_PLL3                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; H8       ; 473        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H9       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; H10      ; 472        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H11      ; 456        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H12      ; 455        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; H11      ; 456        ; 3        ; red[6]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; H12      ; 455        ; 3        ; red[7]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; H13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H15      ; 414        ; 4        ; green[7]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H15      ; 414        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H16      ; 413        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H17      ; 400        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -737,7 +738,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; H20      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; H21      ; 366        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H22      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H23      ; 341        ; 5        ; green[4]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H23      ; 341        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H24      ; 340        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H25      ; 337        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H26      ; 336        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -750,11 +751,11 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; J7       ; 17         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J8       ; 16         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; J9       ; 475        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J10      ; 438        ; 3        ; blue[7]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; J11      ; 437        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J10      ; 438        ; 3        ; blue[4]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; J11      ; 437        ; 3        ; blue[5]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; J12      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; J13      ; 442        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; J14      ; 441        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; J13      ; 442        ; 3        ; blue[0]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; J14      ; 441        ; 3        ; blue[1]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; J15      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; J16      ; 385        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; J17      ; 399        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -787,11 +788,11 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; K18      ; 334        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K19      ; 333        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K20      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; K21      ; 332        ; 5        ; red[1]                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K21      ; 332        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K22      ; 344        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K23      ; 331        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K24      ; 330        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; K25      ; 321        ; 5        ; green[1]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K25      ; 321        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; K26      ; 320        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L1       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; L2       ; 50         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -813,7 +814,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; L18      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L19      ; 322        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L20      ; 328        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; L21      ; 329        ; 5        ; blue[8]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L21      ; 329        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L22      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L23      ; 325        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; L24      ; 324        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -846,7 +847,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; M25      ; 312        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M26      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N1       ; 65         ; 2        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N2       ; 64         ; 2        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N2       ; 64         ; 2        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N3       ; 62         ; 2        ; ^DATA0                                   ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; N4       ; 63         ; 2        ; ^nCE                                     ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N5       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -867,14 +868,14 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; N20      ; 315        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N21      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; N23      ; 311        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N23      ; 311        ; 5        ; fourKey[2]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N24      ; 310        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N25      ; 309        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; N26      ; 308        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; P1       ; 68         ; 1        ; raza                                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P2       ; 67         ; 1        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P1       ; 68         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; P2       ; 67         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P3       ; 69         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P4       ; 70         ; 1        ; blue[3]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P4       ; 70         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P5       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P6       ; 78         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P7       ; 77         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -888,12 +889,12 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; P15      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P16      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P17      ; 293        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; P18      ; 347        ; 5        ; red[0]                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P18      ; 347        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P19      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P20      ; 301        ; 6        ; ^MSEL0                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P21      ; 300        ; 6        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P22      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; P23      ; 305        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P23      ; 305        ; 6        ; fourKey[1]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P24      ; 304        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P25      ; 307        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P26      ; 306        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -976,10 +977,10 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; U25      ; 285        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U26      ; 286        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V1       ; 90         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V2       ; 91         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; V2       ; 91         ; 1        ; raza                                     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; V3       ; 95         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V4       ; 94         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V5       ; 104        ; 1        ; green[3]                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V5       ; 104        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V6       ; 105        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V7       ; 112        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V8       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -1003,7 +1004,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; V26      ; 278        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W1       ; 97         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W2       ; 96         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W3       ; 102        ; 1        ; blue[5]                                  ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W3       ; 102        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W4       ; 101        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W5       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W6       ; 113        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1012,12 +1013,12 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; W9       ;            ; 8        ; VCCIO8                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; W10      ; 145        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W11      ; 161        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; W12      ; 162        ; 8        ; blue[9]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W12      ; 162        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W15      ; 203        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W16      ; 204        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; W17      ; 217        ; 7        ; red[8]                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; W17      ; 217        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W18      ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; W19      ; 234        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; W20      ;            ;          ; GND_PLL4                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1026,7 +1027,7 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; W23      ; 272        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W24      ; 271        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W25      ; 273        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W26      ; 274        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W26      ; 274        ; 6        ; fourKey[0]                               ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y1       ; 103        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y3       ; 108        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1037,9 +1038,9 @@ The pin-out file can be found in /root/yami/Bureau/vhdl/Snaky.pin.
 ; Y8       ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y9       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y10      ; 146        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y11      ; 156        ; 8        ; blue[2]                                  ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y11      ; 156        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y12      ; 180        ; 8        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; Y13      ; 193        ; 7        ; green[6]                                 ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y13      ; 193        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y14      ; 195        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y15      ; 196        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; Y16      ; 210        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -1157,28 +1158,80 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; clk_vga    ; Output   ; --            ; --            ; --                    ; --  ;
 ; sync       ; Output   ; --            ; --            ; --                    ; --  ;
 ; clk        ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
-; raza       ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
-; fourKey[1] ; Input    ; (0) 287 ps    ; (0) 287 ps    ; --                    ; --  ;
-; fourKey[0] ; Input    ; (0) 287 ps    ; (0) 287 ps    ; --                    ; --  ;
-; fourKey[2] ; Input    ; (0) 287 ps    ; (0) 287 ps    ; --                    ; --  ;
+; raza       ; Input    ; (6) 4075 ps   ; (6) 4075 ps   ; --                    ; --  ;
+; fourKey[1] ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
+; fourKey[0] ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
+; fourKey[2] ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
 ; fourKey[3] ; Input    ; (0) 299 ps    ; (0) 299 ps    ; --                    ; --  ;
 +------------+----------+---------------+---------------+-----------------------+-----+
 
 
-+----------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                       ;
-+----------------------------------------+-------------------+---------+
-; Source Pin / Fanout                    ; Pad To Core Index ; Setting ;
-+----------------------------------------+-------------------+---------+
-; clk                                    ;                   ;         ;
-; raza                                   ;                   ;         ;
-; fourKey[1]                             ;                   ;         ;
-; fourKey[0]                             ;                   ;         ;
-; fourKey[2]                             ;                   ;         ;
-;      - button:buttonLeft|buttonCliked  ; 1                 ; 0       ;
-; fourKey[3]                             ;                   ;         ;
-;      - button:buttonRigth|buttonCliked ; 0                 ; 0       ;
-+----------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                             ;
++----------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                          ; Pad To Core Index ; Setting ;
++----------------------------------------------+-------------------+---------+
+; clk                                          ;                   ;         ;
+; raza                                         ;                   ;         ;
+;      - div2                                  ; 1                 ; 6       ;
+;      - cptbe:C1|valint[0]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[1]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[2]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[3]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[4]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[5]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[6]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[7]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[8]                    ; 1                 ; 6       ;
+;      - cptbe:C1|valint[9]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[0]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[1]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[2]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[3]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[4]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[5]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[6]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[7]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[8]                    ; 1                 ; 6       ;
+;      - cptbe:C2|valint[9]                    ; 1                 ; 6       ;
+;      - inversibleCompteur:Xaxis|registre[0]  ; 1                 ; 6       ;
+;      - inversibleCompteur:Xaxis|registre[1]  ; 1                 ; 6       ;
+;      - inversibleCompteur:Xaxis|registre[2]  ; 1                 ; 6       ;
+;      - inversibleCompteur:Yaxis|registre[0]  ; 1                 ; 6       ;
+;      - inversibleCompteur:Yaxis|registre[1]  ; 1                 ; 6       ;
+;      - inversibleCompteur:Yaxis|registre[2]  ; 1                 ; 6       ;
+;      - headControle:snakeHead|present.pRight ; 1                 ; 6       ;
+;      - clock_divider:exertier|en_user        ; 1                 ; 6       ;
+;      - headControle:snakeHead|present.pDown  ; 1                 ; 6       ;
+;      - headControle:snakeHead|present.pLeft  ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[4]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[3]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[2]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[1]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[19]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[18]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[17]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[16]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[14]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[15]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[13]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[9]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[12]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[11]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[10]    ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[5]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[8]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[7]     ; 1                 ; 6       ;
+;      - clock_divider:exertier|counter[6]     ; 1                 ; 6       ;
+; fourKey[1]                                   ;                   ;         ;
+;      - button:buttonDown|buttonCliked        ; 1                 ; 0       ;
+; fourKey[0]                                   ;                   ;         ;
+;      - button:buttonUp|buttonCliked          ; 0                 ; 0       ;
+; fourKey[2]                                   ;                   ;         ;
+;      - button:buttonLeft|buttonCliked        ; 0                 ; 0       ;
+; fourKey[3]                                   ;                   ;         ;
+;      - button:buttonRigth|buttonCliked       ; 0                 ; 0       ;
++----------------------------------------------+-------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1186,19 +1239,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                           ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; button:buttonDown|resync       ; LCFF_X31_Y35_N9    ; 4       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; button:buttonLeft|resync       ; LCFF_X31_Y35_N5    ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; button:buttonRigth|resync      ; LCFF_X31_Y35_N23   ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; button:buttonUp|resync         ; LCFF_X31_Y35_N19   ; 2       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clk                            ; PIN_P2             ; 54      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; clock_divider:exertier|en_user ; LCFF_X46_Y32_N21   ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; div2                           ; LCFF_X47_Y33_N1    ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; enable_ligne~2                 ; LCCOMB_X48_Y32_N22 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; fourKey[0]                     ; PIN_D13            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; fourKey[1]                     ; PIN_C13            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; fourKey[2]                     ; PIN_AA12           ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; fourKey[3]                     ; PIN_D23            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; raza                           ; PIN_P1             ; 50      ; Async. clear ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; button:buttonDown|resync       ; LCFF_X63_Y17_N25   ; 4       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; button:buttonLeft|resync       ; LCFF_X63_Y17_N5    ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; button:buttonRigth|resync      ; LCFF_X63_Y17_N23   ; 3       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; button:buttonUp|resync         ; LCFF_X63_Y17_N3    ; 2       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clk                            ; PIN_N2             ; 54      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; clock_divider:exertier|en_user ; LCFF_X43_Y19_N21   ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; div2                           ; LCFF_X44_Y20_N29   ; 15      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; enable_ligne~2                 ; LCCOMB_X45_Y21_N14 ; 10      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; fourKey[0]                     ; PIN_W26            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; fourKey[1]                     ; PIN_P23            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; fourKey[2]                     ; PIN_N23            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; fourKey[3]                     ; PIN_G26            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; raza                           ; PIN_V2             ; 50      ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +--------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1207,8 +1260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_P2   ; 54      ; Global Clock         ; GCLK3            ; --                        ;
-; raza ; PIN_P1   ; 50      ; Global Clock         ; GCLK1            ; --                        ;
+; clk  ; PIN_N2   ; 54      ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1217,6 +1269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Name                                   ; Fan-Out ;
 +----------------------------------------+---------+
+; raza                                   ; 50      ;
 ; div2                                   ; 15      ;
 ; enable_ligne~2                         ; 10      ;
 ; carre:U0|interieur                     ; 10      ;
@@ -1483,48 +1536,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 141 / 94,460 ( < 1 % ) ;
-; C16 interconnects          ; 2 / 3,315 ( < 1 % )    ;
-; C4 interconnects           ; 63 / 60,840 ( < 1 % )  ;
-; Direct links               ; 58 / 94,460 ( < 1 % )  ;
-; Global clocks              ; 2 / 16 ( 13 % )        ;
-; Local interconnects        ; 101 / 33,216 ( < 1 % ) ;
-; R24 interconnects          ; 6 / 3,091 ( < 1 % )    ;
-; R4 interconnects           ; 62 / 81,294 ( < 1 % )  ;
+; Block interconnects        ; 156 / 94,460 ( < 1 % ) ;
+; C16 interconnects          ; 7 / 3,315 ( < 1 % )    ;
+; C4 interconnects           ; 65 / 60,840 ( < 1 % )  ;
+; Direct links               ; 70 / 94,460 ( < 1 % )  ;
+; Global clocks              ; 1 / 16 ( 6 % )         ;
+; Local interconnects        ; 99 / 33,216 ( < 1 % )  ;
+; R24 interconnects          ; 11 / 3,091 ( < 1 % )   ;
+; R4 interconnects           ; 72 / 81,294 ( < 1 % )  ;
 +----------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+--------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 9.67) ; Number of LABs  (Total = 15) ;
-+--------------------------------------------+------------------------------+
-; 1                                          ; 4                            ;
-; 2                                          ; 0                            ;
-; 3                                          ; 0                            ;
-; 4                                          ; 1                            ;
-; 5                                          ; 1                            ;
-; 6                                          ; 0                            ;
-; 7                                          ; 0                            ;
-; 8                                          ; 0                            ;
-; 9                                          ; 0                            ;
-; 10                                         ; 2                            ;
-; 11                                         ; 0                            ;
-; 12                                         ; 0                            ;
-; 13                                         ; 0                            ;
-; 14                                         ; 0                            ;
-; 15                                         ; 0                            ;
-; 16                                         ; 7                            ;
-+--------------------------------------------+------------------------------+
++----------------------------------------------------------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 10.36) ; Number of LABs  (Total = 14) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 3                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 1                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 7                            ;
++---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.07) ; Number of LABs  (Total = 15) ;
+; LAB-wide Signals  (Average = 2.07) ; Number of LABs  (Total = 14) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 11                           ;
-; 1 Clock                            ; 11                           ;
+; 1 Async. clear                     ; 10                           ;
+; 1 Clock                            ; 10                           ;
 ; 1 Clock enable                     ; 6                            ;
 ; 2 Async. clears                    ; 1                            ;
 ; 2 Clocks                           ; 2                            ;
@@ -1534,11 +1587,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 13.53) ; Number of LABs  (Total = 15) ;
+; Number of Signals Sourced  (Average = 14.50) ; Number of LABs  (Total = 14) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
-; 2                                            ; 3                            ;
+; 2                                            ; 2                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
@@ -1549,9 +1602,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                           ; 2                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
+; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
+; 15                                           ; 1                            ;
 ; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
@@ -1570,16 +1623,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.20) ; Number of LABs  (Total = 15) ;
+; Number of Signals Sourced Out  (Average = 6.64) ; Number of LABs  (Total = 14) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 4                            ;
+; 1                                               ; 3                            ;
 ; 2                                               ; 1                            ;
 ; 3                                               ; 0                            ;
 ; 4                                               ; 1                            ;
 ; 5                                               ; 1                            ;
-; 6                                               ; 2                            ;
-; 7                                               ; 1                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 2                            ;
 ; 8                                               ; 1                            ;
 ; 9                                               ; 0                            ;
 ; 10                                              ; 0                            ;
@@ -1593,11 +1646,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
 +---------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 9.40) ; Number of LABs  (Total = 15) ;
+; Number of Distinct Inputs  (Average = 9.93) ; Number of LABs  (Total = 14) ;
 +---------------------------------------------+------------------------------+
 ; 0                                           ; 0                            ;
 ; 1                                           ; 0                            ;
-; 2                                           ; 3                            ;
+; 2                                           ; 2                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 1                            ;
 ; 5                                           ; 1                            ;
@@ -1656,8 +1709,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Fitter
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 23 15:57:28 2012
-Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off Snaky -c Snaky
+    Info: Processing started: Mon Apr 23 16:27:32 2012
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Snaky -c Snaky
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (119006): Selected device EP2C35F672C6 for design "Snaky"
 Info (21077): Low junction temperature is 0 degrees C
@@ -1671,55 +1724,11 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~ASDO~ is reserved at location E3
     Info (169125): Pin ~nCSO~ is reserved at location D3
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
-Critical Warning (169085): No exact pin location assignment(s) for 41 pins of 41 total pins
-    Info (169086): Pin red[0] not assigned to an exact location on the device
-    Info (169086): Pin red[1] not assigned to an exact location on the device
-    Info (169086): Pin red[2] not assigned to an exact location on the device
-    Info (169086): Pin red[3] not assigned to an exact location on the device
-    Info (169086): Pin red[4] not assigned to an exact location on the device
-    Info (169086): Pin red[5] not assigned to an exact location on the device
-    Info (169086): Pin red[6] not assigned to an exact location on the device
-    Info (169086): Pin red[7] not assigned to an exact location on the device
-    Info (169086): Pin red[8] not assigned to an exact location on the device
-    Info (169086): Pin red[9] not assigned to an exact location on the device
-    Info (169086): Pin green[0] not assigned to an exact location on the device
-    Info (169086): Pin green[1] not assigned to an exact location on the device
-    Info (169086): Pin green[2] not assigned to an exact location on the device
-    Info (169086): Pin green[3] not assigned to an exact location on the device
-    Info (169086): Pin green[4] not assigned to an exact location on the device
-    Info (169086): Pin green[5] not assigned to an exact location on the device
-    Info (169086): Pin green[6] not assigned to an exact location on the device
-    Info (169086): Pin green[7] not assigned to an exact location on the device
-    Info (169086): Pin green[8] not assigned to an exact location on the device
-    Info (169086): Pin green[9] not assigned to an exact location on the device
-    Info (169086): Pin blue[0] not assigned to an exact location on the device
-    Info (169086): Pin blue[1] not assigned to an exact location on the device
-    Info (169086): Pin blue[2] not assigned to an exact location on the device
-    Info (169086): Pin blue[3] not assigned to an exact location on the device
-    Info (169086): Pin blue[4] not assigned to an exact location on the device
-    Info (169086): Pin blue[5] not assigned to an exact location on the device
-    Info (169086): Pin blue[6] not assigned to an exact location on the device
-    Info (169086): Pin blue[7] not assigned to an exact location on the device
-    Info (169086): Pin blue[8] not assigned to an exact location on the device
-    Info (169086): Pin blue[9] not assigned to an exact location on the device
-    Info (169086): Pin hsync not assigned to an exact location on the device
-    Info (169086): Pin vsync not assigned to an exact location on the device
-    Info (169086): Pin blank not assigned to an exact location on the device
-    Info (169086): Pin clk_vga not assigned to an exact location on the device
-    Info (169086): Pin sync not assigned to an exact location on the device
-    Info (169086): Pin clk not assigned to an exact location on the device
-    Info (169086): Pin raza not assigned to an exact location on the device
-    Info (169086): Pin fourKey[1] not assigned to an exact location on the device
-    Info (169086): Pin fourKey[0] not assigned to an exact location on the device
-    Info (169086): Pin fourKey[2] not assigned to an exact location on the device
-    Info (169086): Pin fourKey[3] not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Snaky.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1p, Input))
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node raza (placed in PIN P1 (CLK3, LVDSCLK1n, Input))
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G1
+Info (176353): Automatically promoted node clk (placed in PIN N2 (CLK0, LVDSCLK0p, Input))
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176233): Starting register packing
 Extra Info (176273): Performing register packing on registers with non-logic cell location assignments
 Extra Info (176274): Completed register packing on registers with non-logic cell location assignments
@@ -1729,19 +1738,6 @@ Extra Info (176248): Moving registers into I/O cells, Multiplier Blocks, and RAM
 Extra Info (176249): Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 39 (unused VREF, 3.3V VCCIO, 4 input, 35 output, 0 bidirectional)
-        Info (176212): I/O standards used: 3.3-V LVTTL.
-Info (176215): I/O bank details before I/O pin placement
-    Info (176214): Statistics of I/O banks
-        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  62 pins available
-        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
-        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
-        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1750,7 +1746,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y24 to location X54_Y36
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
@@ -1794,10 +1790,10 @@ Warning (306006): Found 35 output pins without output pin load capacitance assig
     Info (306007): Pin "sync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info (306005): Delay annotation completed successfully
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Quartus II 32-bit Fitter was successful. 0 errors, 6 warnings
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 406 megabytes
-    Info: Processing ended: Mon Apr 23 15:57:37 2012
-    Info: Elapsed time: 00:00:09
+    Info: Processing ended: Mon Apr 23 16:27:39 2012
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:07
 
 
