@@ -120,7 +120,7 @@ begin
  
 		Xaxis: entity work.inversibleCompteur(Behavioral)
 					generic map(
-						n => 7
+						n => 640
 					)
 					port map(
 						clk => clk,
@@ -133,7 +133,7 @@ begin
 		
 		Yaxis: entity work.inversibleCompteur(Behavioral)
 					generic map(
-						n => 7
+						n => 480
 					)
 					port map(
 						clk => clk,
