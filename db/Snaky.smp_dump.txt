@@ -1,0 +1,7 @@
+
+State Machine - |vga|headControle:snakeHead|present
+Name present.pUp present.pLeft present.pDown present.pRight 
+present.pRight 0 0 0 0 
+present.pDown 0 0 1 1 
+present.pLeft 0 1 0 1 
+present.pUp 1 0 0 1 
