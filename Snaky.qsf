@@ -109,4 +109,5 @@ set_location_assignment PIN_V18 -to fourLed[3]
 set_location_assignment PIN_W19 -to fourLed[2]
 set_location_assignment PIN_AF22 -to fourLed[1]
 set_location_assignment PIN_AE22 -to fourLed[0]
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

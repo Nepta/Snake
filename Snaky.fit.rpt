@@ -1,5 +1,5 @@
 Fitter report for Snaky
-Mon Apr 23 19:48:09 2012
+Tue Apr 24 22:10:34 2012
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -61,7 +61,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                     ;
 +------------------------------------+-----------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 23 19:48:09 2012         ;
+; Fitter Status                      ; Successful - Tue Apr 24 22:10:34 2012         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Snaky                                         ;
 ; Top-level Entity Name              ; vga                                           ;
@@ -1720,7 +1720,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Fitter
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Mon Apr 23 19:47:49 2012
+    Info: Processing started: Tue Apr 24 22:10:25 2012
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Snaky -c Snaky
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (119006): Selected device EP2C35F672C6 for design "Snaky"
@@ -1749,7 +1749,7 @@ Extra Info (176248): Moving registers into I/O cells, Multiplier Blocks, and RAM
 Extra Info (176249): Finished moving registers into I/O cells, Multiplier Blocks, and RAM blocks
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1805,9 +1805,9 @@ Warning (306006): Found 39 output pins without output pin load capacitance assig
     Info (306007): Pin "sync" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info (306005): Delay annotation completed successfully
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 405 megabytes
-    Info: Processing ended: Mon Apr 23 19:48:09 2012
-    Info: Elapsed time: 00:00:20
+    Info: Peak virtual memory: 406 megabytes
+    Info: Processing ended: Tue Apr 24 22:10:34 2012
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 
 
