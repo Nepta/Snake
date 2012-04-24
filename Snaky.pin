@@ -556,8 +556,8 @@ NC                           : N21       :        :                   :         
 VCCIO5                       : N22       : power  :                   : 3.3V    : 5         :                
 fourKey[2]                   : N23       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT               : N24       :        :                   :         : 5         :                
-GND+                         : N25       :        :                   :         : 5         :                
-GND+                         : N26       :        :                   :         : 5         :                
+switch0                      : N25       : input  : 3.3-V LVTTL       :         : 5         : Y              
+switch1                      : N26       : input  : 3.3-V LVTTL       :         : 5         : Y              
 GND+                         : P1        :        :                   :         : 1         :                
 GND+                         : P2        :        :                   :         : 1         :                
 RESERVED_INPUT               : P3        :        :                   :         : 1         :                

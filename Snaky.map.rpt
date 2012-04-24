@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Snaky
-Tue Apr 24 22:10:23 2012
+Tue Apr 24 23:38:55 2012
 Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
 
 
@@ -9,23 +9,25 @@ Quartus II 32-bit Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Editio
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |vga|headControle:snakeHead|present
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: cptbe:C1
- 14. Parameter Settings for User Entity Instance: cptbe:C2
- 15. Parameter Settings for User Entity Instance: clock_divider:exertier
- 16. Parameter Settings for User Entity Instance: inversibleCompteur:Xaxis
- 17. Parameter Settings for User Entity Instance: inversibleCompteur:Yaxis
- 18. Port Connectivity Checks: "carre:U0"
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Default Parameter Settings
+  5. Parallel Compilation
+  6. Analysis & Synthesis Source Files Read
+  7. Analysis & Synthesis Resource Usage Summary
+  8. Analysis & Synthesis Resource Utilization by Entity
+  9. State Machine - |vga|headControle:snakeHead|present
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: cptbe:C1
+ 13. Parameter Settings for User Entity Instance: cptbe:C2
+ 14. Parameter Settings for User Entity Instance: clock_divider:exertier
+ 15. Parameter Settings for User Entity Instance: inversibleCompteur:Xaxis
+ 16. Parameter Settings for User Entity Instance: inversibleCompteur:Yaxis
+ 17. Port Connectivity Checks: "userDffe:directionY"
+ 18. Port Connectivity Checks: "userDffe:directionX"
+ 19. Port Connectivity Checks: "inversibleCompteur:Yaxis"
+ 20. Port Connectivity Checks: "carre:U0"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -51,16 +53,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 24 22:10:23 2012         ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 24 23:38:55 2012         ;
 ; Quartus II 32-bit Version          ; 11.1 Build 259 01/25/2012 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Snaky                                         ;
 ; Top-level Entity Name              ; vga                                           ;
 ; Family                             ; Cyclone II                                    ;
-; Total logic elements               ; 149                                           ;
-;     Total combinational functions  ; 141                                           ;
-;     Dedicated logic registers      ; 59                                            ;
-; Total registers                    ; 59                                            ;
-; Total pins                         ; 45                                            ;
+; Total logic elements               ; 137                                           ;
+;     Total combinational functions  ; 129                                           ;
+;     Dedicated logic registers      ; 43                                            ;
+; Total registers                    ; 43                                            ;
+; Total pins                         ; 47                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                             ;
@@ -151,6 +153,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
++-------------------------------------------------+
+; Analysis & Synthesis Default Parameter Settings ;
++----------------------+--------------------------+
+; Name                 ; Setting                  ;
++----------------------+--------------------------+
+; CYCLONEII_SAFE_WRITE ; "RESTRUCTURE"            ;
++----------------------+--------------------------+
+
+
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
 +-------------------------------------+
 ; Parallel Compilation                ;
@@ -167,6 +178,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ;
 +----------------------------------+-----------------+-----------------+------------------------------------------+
+; dffe.vhd                         ; yes             ; User VHDL File  ; /root/yami/Bureau/vhdl/dffe.vhd          ;
 ; vga.vhd                          ; yes             ; User VHDL File  ; /root/yami/Bureau/vhdl/vga.vhd           ;
 ; headControle.vhd                 ; yes             ; User VHDL File  ; /root/yami/Bureau/vhdl/headControle.vhd  ;
 ; direction.vhd                    ; yes             ; User VHDL File  ; /root/yami/Bureau/vhdl/direction.vhd     ;
@@ -183,27 +195,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 149   ;
+; Estimated Total logic elements              ; 137   ;
 ;                                             ;       ;
-; Total combinational functions               ; 141   ;
+; Total combinational functions               ; 129   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 56    ;
-;     -- 3 input functions                    ; 18    ;
-;     -- <=2 input functions                  ; 67    ;
+;     -- 4 input functions                    ; 34    ;
+;     -- 3 input functions                    ; 35    ;
+;     -- <=2 input functions                  ; 60    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 89    ;
-;     -- arithmetic mode                      ; 52    ;
+;     -- normal mode                          ; 61    ;
+;     -- arithmetic mode                      ; 68    ;
 ;                                             ;       ;
-; Total registers                             ; 59    ;
-;     -- Dedicated logic registers            ; 59    ;
+; Total registers                             ; 43    ;
+;     -- Dedicated logic registers            ; 43    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 45    ;
+; I/O pins                                    ; 47    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 55    ;
-; Total fan-out                               ; 619   ;
-; Average fan-out                             ; 2.53  ;
+; Maximum fan-out                             ; 39    ;
+; Total fan-out                               ; 524   ;
+; Average fan-out                             ; 2.39  ;
 +---------------------------------------------+-------+
 
 
@@ -212,19 +224,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Library Name ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
-; |vga                          ; 141 (4)           ; 59 (1)       ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |vga                          ;              ;
+; |vga                          ; 129 (4)           ; 43 (1)       ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |vga                          ;              ;
 ;    |button:buttonDown|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonDown        ;              ;
 ;    |button:buttonLeft|        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonLeft        ;              ;
 ;    |button:buttonRigth|       ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonRigth       ;              ;
 ;    |button:buttonUp|          ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|button:buttonUp          ;              ;
-;    |carre:U0|                 ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|carre:U0                 ;              ;
-;    |clock_divider:exertier|   ; 33 (33)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|clock_divider:exertier   ;              ;
+;    |carre:U0|                 ; 50 (50)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|carre:U0                 ;              ;
 ;    |controle:synch|           ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|controle:synch           ;              ;
 ;    |cptbe:C1|                 ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|cptbe:C1                 ;              ;
 ;    |cptbe:C2|                 ; 20 (20)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|cptbe:C2                 ;              ;
 ;    |headControle:snakeHead|   ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|headControle:snakeHead   ;              ;
-;    |inversibleCompteur:Xaxis| ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|inversibleCompteur:Xaxis ;              ;
-;    |inversibleCompteur:Yaxis| ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|inversibleCompteur:Yaxis ;              ;
+;    |inversibleCompteur:Xaxis| ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga|inversibleCompteur:Xaxis ;              ;
 +-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,43 +252,17 @@ Encoding Type:  One-Hot
 +----------------+-------------+---------------+---------------+----------------+
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; inversibleCompteur:Xaxis|registre[6..9] ; Stuck at GND due to stuck port data_in ;
-; inversibleCompteur:Yaxis|registre[6..9] ; Stuck at GND due to stuck port data_in ;
-; inversibleCompteur:Xaxis|registre[3..5] ; Stuck at GND due to stuck port data_in ;
-; inversibleCompteur:Yaxis|registre[3..5] ; Stuck at GND due to stuck port data_in ;
-; clock_divider:exertier|counter[0]       ; Merged with div2                       ;
-; Total Number of Removed Registers = 15  ;                                        ;
-+-----------------------------------------+----------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                    ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
-; Register name                        ; Reason for Removal        ; Registers Removed due to This Register                                      ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
-; inversibleCompteur:Xaxis|registre[9] ; Stuck at GND              ; inversibleCompteur:Xaxis|registre[5], inversibleCompteur:Xaxis|registre[4], ;
-;                                      ; due to stuck port data_in ; inversibleCompteur:Xaxis|registre[3]                                        ;
-; inversibleCompteur:Yaxis|registre[9] ; Stuck at GND              ; inversibleCompteur:Yaxis|registre[5], inversibleCompteur:Yaxis|registre[4], ;
-;                                      ; due to stuck port data_in ; inversibleCompteur:Yaxis|registre[3]                                        ;
-+--------------------------------------+---------------------------+-----------------------------------------------------------------------------+
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 59    ;
+; Total registers                              ; 43    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 55    ;
+; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 26    ;
+; Number of registers using Clock Enable       ; 30    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -288,7 +272,7 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+---------------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                            ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+---------------------------------------+----------------------------+
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; |vga|headControle:snakeHead|Selector1 ;                            ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; |vga|headControle:snakeHead|Selector0 ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+---------------------------------------+----------------------------+
 
 
@@ -328,7 +312,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; n              ; 7     ; Signed Integer                               ;
+; n              ; 640   ; Signed Integer                               ;
 +----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -338,22 +322,55 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; n              ; 7     ; Signed Integer                               ;
+; n              ; 480   ; Signed Integer                               ;
 +----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------+
-; Port Connectivity Checks: "carre:U0"         ;
-+------------+-------+----------+--------------+
-; Port       ; Type  ; Severity ; Details      ;
-+------------+-------+----------+--------------+
-; cote[9..4] ; Input ; Info     ; Stuck at GND ;
-; cote[3]    ; Input ; Info     ; Stuck at VCC ;
-; cote[2]    ; Input ; Info     ; Stuck at GND ;
-; cote[1]    ; Input ; Info     ; Stuck at VCC ;
-; cote[0]    ; Input ; Info     ; Stuck at GND ;
-+------------+-------+----------+--------------+
++-------------------------------------------------+
+; Port Connectivity Checks: "userDffe:directionY" ;
++--------+-------+----------+---------------------+
+; Port   ; Type  ; Severity ; Details             ;
++--------+-------+----------+---------------------+
+; datain ; Input ; Info     ; Stuck at VCC        ;
++--------+-------+----------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "userDffe:directionX"                                                                   ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; datain  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; dataout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "inversibleCompteur:Yaxis"                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; val  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "carre:U0"              ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; cote[9..4]      ; Input ; Info     ; Stuck at GND ;
+; cote[3]         ; Input ; Info     ; Stuck at VCC ;
+; cote[2]         ; Input ; Info     ; Stuck at GND ;
+; cote[1]         ; Input ; Info     ; Stuck at VCC ;
+; cote[0]         ; Input ; Info     ; Stuck at GND ;
+; positiony[7..6] ; Input ; Info     ; Stuck at VCC ;
+; positiony[9..8] ; Input ; Info     ; Stuck at GND ;
+; positiony[5..4] ; Input ; Info     ; Stuck at GND ;
+; positiony[2..0] ; Input ; Info     ; Stuck at GND ;
+; positiony[3]    ; Input ; Info     ; Stuck at VCC ;
++-----------------+-------+----------+--------------+
 
 
 +-------------------------------+
@@ -361,7 +378,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -371,20 +388,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Apr 24 22:10:18 2012
+    Info: Processing started: Tue Apr 24 23:38:51 2012
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Snaky -c Snaky
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file dffe.vhd
+    Info (12022): Found design unit 1: userDffe-Behavioral
+    Info (12023): Found entity 1: userDffe
 Info (12021): Found 2 design units, including 1 entities, in source file vga.vhd
     Info (12022): Found design unit 1: vga-controle
     Info (12023): Found entity 1: vga
 Info (12021): Found 2 design units, including 1 entities, in source file snakeSpeed.vhd
     Info (12022): Found design unit 1: snakeSpeed-Behavioral
     Info (12023): Found entity 1: snakeSpeed
-Info (12021): Found 0 design units, including 0 entities, in source file sim.vhd
+Warning (12019): Can't analyze file -- file sim.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file seven_segment_decoder.vhd
     Info (12022): Found design unit 1: seven_segment_decoder-RTL
     Info (12023): Found entity 1: seven_segment_decoder
-Info (12021): Found 0 design units, including 0 entities, in source file intersection.vhd
+Warning (12019): Can't analyze file -- file intersection.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file headControle.vhd
     Info (12022): Found design unit 1: headControle-stateMachine
     Info (12023): Found entity 1: headControle
@@ -394,7 +414,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file directi
 Info (12021): Found 2 design units, including 1 entities, in source file cptbe.vhd
     Info (12022): Found design unit 1: cptbe-Behavioral
     Info (12023): Found entity 1: cptbe
-Info (12021): Found 0 design units, including 0 entities, in source file couleur.vhd
+Warning (12019): Can't analyze file -- file couleur.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file controle.vhd
     Info (12022): Found design unit 1: controle-Behavioral
     Info (12023): Found entity 1: controle
@@ -408,15 +428,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file button.
     Info (12022): Found design unit 1: button-Behavioral
     Info (12023): Found entity 1: button
 Info (12127): Elaborating entity "vga" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at vga.vhd(31): object "xAxisMove" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at vga.vhd(36): object "yOffset" assigned a value but never read
+Info (10041): Inferred latch for "yAxisMoveInt" at vga.vhd(219)
+Info (10041): Inferred latch for "xAxisMoveInt" at vga.vhd(218)
 Info (12129): Elaborating entity "carre" using architecture "A:behavioral" for hierarchy "carre:U0"
 Info (12129): Elaborating entity "controle" using architecture "A:behavioral" for hierarchy "controle:synch"
 Info (12129): Elaborating entity "cptbe" using architecture "A:behavioral" for hierarchy "cptbe:C1"
 Info (12129): Elaborating entity "cptbe" using architecture "A:behavioral" for hierarchy "cptbe:C2"
 Info (12129): Elaborating entity "clock_divider" using architecture "A:rtl" for hierarchy "clock_divider:exertier"
 Info (12129): Elaborating entity "inversibleCompteur" using architecture "A:behavioral" for hierarchy "inversibleCompteur:Xaxis"
+Info (12129): Elaborating entity "inversibleCompteur" using architecture "A:behavioral" for hierarchy "inversibleCompteur:Yaxis"
 Info (12129): Elaborating entity "button" using architecture "A:behavioral" for hierarchy "button:buttonUp"
 Info (12129): Elaborating entity "headControle" using architecture "A:statemachine" for hierarchy "headControle:snakeHead"
-Info (13005): Duplicate registers merged to single register
+Info (12129): Elaborating entity "userDffe" using architecture "A:behavioral" for hierarchy "userDffe:directionX"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "green[0]" is stuck at VCC
     Warning (13410): Pin "green[1]" is stuck at VCC
@@ -440,14 +465,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "blue[9]" is stuck at GND
     Warning (13410): Pin "sync" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Info (21057): Implemented 185 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 149 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info (21061): Implemented 138 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 28 warnings
     Info: Peak virtual memory: 338 megabytes
-    Info: Processing ended: Tue Apr 24 22:10:23 2012
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Tue Apr 24 23:38:55 2012
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

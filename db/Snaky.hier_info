@@ -10,13 +10,19 @@ clk => button:buttonDown.clk
 clk => button:buttonLeft.clk
 clk => button:buttonRigth.clk
 clk => headcontrole:snakeHead.clk
+clk => userdffe:directionX.clk
+clk => userdffe:directionY.clk
 raza => cptbe:C1.raza
 raza => cptbe:C2.raza
 raza => clock_divider:exertier.resetn
 raza => inversiblecompteur:Xaxis.raza
 raza => inversiblecompteur:Yaxis.raza
 raza => headcontrole:snakeHead.raza
+raza => userdffe:directionX.raza
+raza => userdffe:directionY.raza
 raza => div2.ACLR
+switch0 => inversiblecompteur:Xaxis.en
+switch1 => inversiblecompteur:Xaxis.sens
 fourKey[0] => button:buttonUp.button
 fourKey[1] => button:buttonDown.button
 fourKey[2] => button:buttonLeft.button
@@ -427,5 +433,19 @@ d => futur.OUTPUTSELECT
 d => futur.OUTPUTSELECT
 clk => present~1.DATAIN
 raza => present~3.DATAIN
+
+
+|vga|userDffe:directionX
+clk => qint.CLK
+raza => qint.ACLR
+dataIn => qint.DATAIN
+ena => qint.ENA
+
+
+|vga|userDffe:directionY
+clk => qint.CLK
+raza => qint.ACLR
+dataIn => qint.DATAIN
+ena => qint.ENA
 
 

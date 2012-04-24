@@ -42,19 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY vga
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:56:01  APRIL 23, 2012"
 set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP2"
-set_global_assignment -name VHDL_FILE vga.vhd
-set_global_assignment -name VHDL_FILE snakeSpeed.vhd
-set_global_assignment -name VHDL_FILE sim.vhd
-set_global_assignment -name VHDL_FILE seven_segment_decoder.vhd
-set_global_assignment -name VHDL_FILE intersection.vhd
-set_global_assignment -name VHDL_FILE headControle.vhd
-set_global_assignment -name VHDL_FILE direction.vhd
-set_global_assignment -name VHDL_FILE cptbe.vhd
-set_global_assignment -name VHDL_FILE couleur.vhd
-set_global_assignment -name VHDL_FILE controle.vhd
-set_global_assignment -name VHDL_FILE clock_divider.vhd
-set_global_assignment -name VHDL_FILE carre.vhd
-set_global_assignment -name VHDL_FILE button.vhd
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
@@ -110,4 +97,23 @@ set_location_assignment PIN_W19 -to fourLed[2]
 set_location_assignment PIN_AF22 -to fourLed[1]
 set_location_assignment PIN_AE22 -to fourLed[0]
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name VHDL_FILE dffe.vhd
+set_global_assignment -name VHDL_FILE vga.vhd
+set_global_assignment -name VHDL_FILE snakeSpeed.vhd
+set_global_assignment -name VHDL_FILE sim.vhd
+set_global_assignment -name VHDL_FILE seven_segment_decoder.vhd
+set_global_assignment -name VHDL_FILE intersection.vhd
+set_global_assignment -name VHDL_FILE headControle.vhd
+set_global_assignment -name VHDL_FILE direction.vhd
+set_global_assignment -name VHDL_FILE cptbe.vhd
+set_global_assignment -name VHDL_FILE couleur.vhd
+set_global_assignment -name VHDL_FILE controle.vhd
+set_global_assignment -name VHDL_FILE clock_divider.vhd
+set_global_assignment -name VHDL_FILE carre.vhd
+set_global_assignment -name VHDL_FILE button.vhd
+set_parameter -name CYCLONEII_SAFE_WRITE "\"RESTRUCTURE\""
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_N25 -to switch0
+set_location_assignment PIN_N26 -to switch1
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

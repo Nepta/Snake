@@ -118,90 +118,6 @@ controle:synch
 
 # end
 # entity
-cptbe
-# storage
-db|Snaky.(3).cnf
-db|Snaky.(3).cnf
-# architecture
-A:behavioral
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-cptbe.vhd
-89a9463bc344f72934b6e2c4e8edbd27
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-n
-525
-PARAMETER_SIGNED_DEC
-USR
- constraint(val)
-9 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-cptbe:C1
-}
-# macro_sequence
-
-# end
-# entity
-cptbe
-# storage
-db|Snaky.(4).cnf
-db|Snaky.(4).cnf
-# architecture
-A:behavioral
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-cptbe.vhd
-89a9463bc344f72934b6e2c4e8edbd27
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-n
-794
-PARAMETER_SIGNED_DEC
-USR
- constraint(val)
-9 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-cptbe:C2
-}
-# macro_sequence
-
-# end
-# entity
 clock_divider
 # storage
 db|Snaky.(5).cnf
@@ -244,49 +160,6 @@ clock_divider:exertier
 
 # end
 # entity
-inversibleCompteur
-# storage
-db|Snaky.(6).cnf
-db|Snaky.(6).cnf
-# architecture
-A:behavioral
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-direction.vhd
-8b8d575b345e12ae832115f0e413f8c1
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# user_parameter {
-n
-7
-PARAMETER_SIGNED_DEC
-USR
- constraint(val)
-9 downto 0
-PARAMETER_STRING
-USR
-}
-# hierarchies {
-inversibleCompteur:Xaxis
-inversibleCompteur:Yaxis
-}
-# macro_sequence
-
-# end
-# entity
 button
 # storage
 db|Snaky.(7).cnf
@@ -322,36 +195,6 @@ button:buttonRigth
 
 # end
 # entity
-vga
-# storage
-db|Snaky.(0).cnf
-db|Snaky.(0).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-vga.vhd
-86304a4b6b31bd2f6286b26c4d89168
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 headControle
 # storage
 db|Snaky.(8).cnf
@@ -379,6 +222,315 @@ ON
 }
 # hierarchies {
 headControle:snakeHead
+}
+# macro_sequence
+
+# end
+# entity
+cptbe
+# storage
+db|Snaky.(3).cnf
+db|Snaky.(3).cnf
+# architecture
+A:behavioral
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cptbe.vhd
+fefa632ec38ed23231f567f32db74875
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+525
+PARAMETER_SIGNED_DEC
+USR
+ constraint(val)
+9 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+cptbe:C1
+}
+# macro_sequence
+
+# end
+# entity
+cptbe
+# storage
+db|Snaky.(4).cnf
+db|Snaky.(4).cnf
+# architecture
+A:behavioral
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cptbe.vhd
+fefa632ec38ed23231f567f32db74875
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+794
+PARAMETER_SIGNED_DEC
+USR
+ constraint(val)
+9 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+cptbe:C2
+}
+# macro_sequence
+
+# end
+# entity
+userDffe
+# storage
+db|Snaky.(12).cnf
+db|Snaky.(12).cnf
+# architecture
+A:behavioral
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dffe.vhd
+eaf0c56a2067cfbe36362e2261aff6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+userDffe:directionX
+userDffe:directionY
+}
+# macro_sequence
+
+# end
+# entity
+clock_divider
+# storage
+db|Snaky.(13).cnf
+db|Snaky.(13).cnf
+# architecture
+A:rtl
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clock_divider.vhd
+c9b7d1c5e9a50ad823ae62a43f5c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+board_frequency
+50000000.0
+PARAMETER_SIGNED_FLOAT
+USR
+user_frequency
+10.0
+PARAMETER_SIGNED_FLOAT
+USR
+}
+# macro_sequence
+
+# end
+# entity
+clock_divider
+# storage
+db|Snaky.(6).cnf
+db|Snaky.(6).cnf
+# architecture
+A:rtl
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clock_divider.vhd
+c9b7d1c5e9a50ad823ae62a43f5c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+board_frequency
+50000000.0
+PARAMETER_SIGNED_FLOAT
+USR
+user_frequency
+1.0
+PARAMETER_SIGNED_FLOAT
+USR
+}
+# macro_sequence
+
+# end
+# entity
+inversibleCompteur
+# storage
+db|Snaky.(10).cnf
+db|Snaky.(10).cnf
+# architecture
+A:behavioral
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+direction.vhd
+5199cf94f75ffb7d398bbe44b1a1abb0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+640
+PARAMETER_SIGNED_DEC
+USR
+ constraint(val)
+9 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+inversibleCompteur:Xaxis
+}
+# macro_sequence
+
+# end
+# entity
+inversibleCompteur
+# storage
+db|Snaky.(11).cnf
+db|Snaky.(11).cnf
+# architecture
+A:behavioral
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+direction.vhd
+5199cf94f75ffb7d398bbe44b1a1abb0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+480
+PARAMETER_SIGNED_DEC
+USR
+ constraint(val)
+9 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+inversibleCompteur:Yaxis
+}
+# macro_sequence
+
+# end
+# entity
+vga
+# storage
+db|Snaky.(0).cnf
+db|Snaky.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+vga.vhd
+6c1ebcadf4ada7909142e85f885c9b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
 }
 # macro_sequence
 
