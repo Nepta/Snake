@@ -2,23 +2,19 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity dffe is
-	generic(
-		n: natural:=1
-	);
-	
+entity userDffe is
 	port(
 		clk, raza: in std_logic;
-		dataIn: in std_logic_vector(n-1 downto 0);
-		en: std_logic;
-		dataOut: out std_logic_vector(n-1 downto 0)
+		dataIn: in std_logic;
+		ena: std_logic;
+		dataOut: out std_logic
 	);
-end entity;
+end userDffe;
 
-architecture Behavioral of dffe is
-	signal qint, mux: std_logic_vector(n-1 downto 0);
+architecture Behavioral of userDffe is
+	signal qint, mux: std_logic;
 begin
 	dataOut <= qint;
-	qint <= (others => '0') when raza='1' else mux when rising_edge(clk); 
-	mux <= qint when en = '0' else dataIn;
-end architecture;
+	qint <= '0' when raza='0' else mux when rising_edge(clk); 
+	mux <= qint when ena = '0' else dataIn;
+end Behavioral;

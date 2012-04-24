@@ -6,11 +6,15 @@ entity vga is
 	port(
 		clk, raza: in std_logic;
 		red, green, blue: out std_logic_vector(9 downto 0);
+
 		
 		hsync, vsync, blank: out std_logic;
 		clk_vga: out std_logic;
 		sync: out std_logic;
 
+		switch0: in std_logic;
+		switch1: in std_logic;
+		
 		fourKey: in std_logic_vector(3 downto 0);
 		fourLed: out std_logic_vector(3 downto 0)
 	);
@@ -20,19 +24,15 @@ architecture controle of vga is
 	-- vga synchronisation stuff
 	signal cmpt_pixel, cmpt_ligne: std_logic_vector(9 downto 0);
 	signal enable_ligne, div2, div2int: std_logic;
-
 	-- Clock to speed down the game
 	signal humanClock: std_logic;
 	
 	-- signal to manage snake's moves
 	signal xAxisMove, yAxisMove: std_logic;
 	signal xAxisMoveInt, yAxisMoveInt: std_logic;
-	
 	-- Movable object
 	signal carre0: std_logic;
 	signal xOffset, yOffset: std_logic_vector(9 downto 0);
-
-
 	-- Snake
 	signal brain, bodyWave: std_logic_vector(3 downto 0);
 begin
@@ -41,15 +41,13 @@ begin
 	div2int <= not div2;
 	div2 <= '0' when raza = '0' else div2int when rising_edge(clk);
 	clk_vga <= div2;
-
-
 	U0: entity work.carre(Behavioral)
 			port map(
 				cmpt_pixel => cmpt_pixel,
 				cmpt_ligne => cmpt_ligne,
 				cote => std_logic_vector(to_unsigned(10,10)),
 				positionX => xOffset,
-				positionY => yOffset,
+				positionY => std_logic_vector(to_unsigned(200,10)),
 				interieur => carre0
 			)
 		;
@@ -87,12 +85,9 @@ begin
 --				)
 --		;
 --			
-
 	red <= (others => '0') when carre0 = '1' else (others => '1');
 	green <= (others => '1');
 	blue <= (others => '0');
-
-
 		synch: entity work.controle(Behavioral)
 				port map(
 					cmpt_pixel => cmpt_pixel,
@@ -131,7 +126,7 @@ begin
 		exertier: entity work.clock_divider(RTL)
 				generic map(
 					board_frequency => 50_000_000.0,
-					user_frequency => 50.0
+					user_frequency => 50.0 -- 50.0
 				)
 				port map(
 					clk => clk,
@@ -148,8 +143,8 @@ begin
 					port map(
 						clk => clk,
 						raza => raza,
-						en => xAxisMove,
-						sens => bodyWave(0),
+						en => switch0,
+						sens => switch1,
 						val => xOffset
 					)
 		;
@@ -167,6 +162,7 @@ begin
 					)
 		;
 -- TODO componant style vhdl to make the joystick
+
 	buttonUp: entity work.button(Behavioral)
 		port map(
 			clk => clk,
@@ -218,13 +214,12 @@ begin
 	enable_ligne <= '1' when div2 = '1' and unsigned(cmpt_pixel) = 0 else '0';
 
 	xAxisMoveInt <= '1' when bodyWave(0) = '1' or bodyWave(2) = '1';
-	yAxisMoveInt <= bodyWave(1) or bodyWave(3);
+	yAxisMoveInt <= '1' when bodyWave(1) = '1' or bodyWave(3) = '1';
 
-	directionX: entity work.dffe(Behavioral) port map(clk => clk, raza => raza, dataIn => xAxisMoveInt, en => humanClock, dataOut => xAxisMove);
+	directionX: entity work.userDffe(Behavioral) port map(clk => clk, raza => raza, dataIn => xAxisMoveInt, ena => humanClock, dataOut => xAxisMove);
 	
-	directionY: entity work.dffe(Behavioral) port map(clk => clk, raza => raza, dataIn => yAxisMoveInt, en => humanClock, dataOut => xAxisMove);
+	directionY: entity work.userDffe(Behavioral) port map(clk => clk, raza => raza, dataIn => yAxisMoveInt, ena => humanClock, dataOut => yAxisMove);
 	
 	fourLed <= bodyWave;
 	
 end controle;
-
